@@ -1,0 +1,98 @@
+{
+    "home": {
+        "products": {
+            "title": "Produits",
+            "description": "Découvrez nos solutions d'éclairage extérieur durables, élégantes et protégées contre les UV. Tous nos produits sont fabriqués avec des matériaux ABS et PC d'origine. Consultez notre large gamme de produits conçus pour une performance durable et téléchargez notre catalogue pour des spécifications détaillées.",
+            "button":"Vers le catalogue!"
+        },
+        "about_us": {
+            "title": "À Propos de Nous",
+            "description": "Découvrez l'expertise de 40 ans de Zita Lighting, des produits fabriqués à 100 % en Turquie, et notre engagement envers la qualité de l'éclairage extérieur.",
+            "button":"En savoir plus!"
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Vous avez des questions ou souhaitez voir notre processus de fabrication en action ? Contactez-nous pour planifier votre rendez-vous et visiter notre usine à Istanbul. Nous sommes toujours ravis de vous accueillir et de discuter de vos besoins en éclairage.",
+            "button":"Contact!"
+        },
+        "certifications": {
+            "title": "Certifications",
+            "description": "Zita Lighting respecte des directives industrielles strictes en matière d'assurance qualité et de fabrication. Notre engagement envers un système de gestion de la qualité efficace et la garantie que chaque produit répond à des normes de qualité et de sécurité strictes sont accrédités par notre certification ISO 9001:2015. De plus, tous nos produits respectent les réglementations européennes en matière de sécurité, de santé et de protection de l'environnement, grâce aux certifications CE et ROHS.",
+            "button":"Voir les certifications"
+        }
+    },
+    "products": {
+        "catalogue": {
+            "title": "Catalogue Zita Lighting 2025",
+            "description": "Consultez notre dernier catalogue et découvrez nos solutions d'éclairage durables, élégantes et fiables."
+        },
+        "uv_protection": {
+            "title": "Protection UV : Conçu pour durer sous le soleil",
+            "features1":  "1. Résistant aux changements de couleur : Maintient vos lampes de jardin et lampadaires aussi beaux que neufs, même après des années d'exposition au soleil.",
+            "features2": "2. Durabilité renforcée : Nos produits conservent leur solidité et leur apparence dans des conditions météorologiques difficiles, garantissant leur fiabilité pendant des années, avec des garanties minimales de 5 ans."
+        },
+        "materials": {
+            "title": "Fabriqué avec des matériaux ABS et PC d'origine",
+            "features1": "Conservation de la forme : Comparés aux matériaux non réglementés et mélangés, nos produits résistent à la déformation, même sous des conditions météorologiques extrêmes.",
+            "features2": "Couleurs constantes : Profitez d'une apparence uniforme au fil du temps, sans décoloration ni altération.",
+            "features3": "Conçu pour la qualité : Pensé pour durer des années, offrant à la fois fonctionnalité et style." 
+        },
+        "sockets": {
+            "title": "Longévité avec les douilles E-27 & GU-10",
+            "features1": "Longévité : Remplacez l'ampoule, pas l’ensemble du produit. Cela garantit l'utilisation de nos produits pendant des années.",
+            "features2": "Personnalisation : Choisissez l’ampoule qui convient à vos besoins pour différents effets lumineux ou couleurs.",
+            "features3": "Solution écologique : Réduisez les déchets en évitant les lampes jetables, rendant nos produits plus durables."
+        },
+        "certifications": {
+            "title": "Certifications conformes",
+            "description": "Nos produits respectent les normes de sécurité et environnementales les plus élevées, y compris les certifications CE et ROHS."
+        }
+    },
+    "about_us": {
+        "who_we_are": {
+            "title": "Qui Nous Sommes",
+            "description": "Fondée en 2010, Zita Lighting est une entreprise spécialisée dans la fabrication d'éclairages extérieurs durables, avec plus de 40 ans d'expérience. Basés à Istanbul, nous produisons tous nos produits localement. Nous sommes fiers de combiner efficacité, style et dernières technologies pour créer des produits sûrs et de haute qualité."
+        },
+        "commitment": {
+            "title": "Notre Engagement envers la Qualité",
+            "features1": "Protection UV pour éviter le jaunissement et la décoloration.",
+            "features2": "Matériaux ABS et PC d'origine pour une résistance optimale.",
+            "features3": "Garantie minimale de 5 ans sur toutes nos solutions d'éclairage extérieur.",
+            "subFeature1": "Contrairement aux luminaires LED intégrés qui deviennent des déchets lorsque la source lumineuse tombe en panne, nos conceptions à douille permettent un remplacement facile de l'ampoule, prolongeant ainsi la durée de vie du produit.",
+            "subFeature2": "Conçus pour résister au soleil, à la pluie et aux variations de température, nos luminaires conservent leur utilité et leur apparence au fil du temps.",
+            "subFeature3": "Nous proposons divers styles et configurations pour s'adapter à vos différents espaces extérieurs."
+        },
+        "certifications": {
+            "title": "Normes et Certifications Internationales",
+            "des1": "Chez Zita Lighting, nous atteignons toujours des normes industrielles élevées en matière de fabrication et de sécurité. Zita Lighting détient la certification ISO 9001:2015, garantissant des pratiques de gestion de qualité de premier ordre pour chaque produit que nous livrons.",
+            "des2": "Nos produits respectent également les normes essentielles de sécurité et d’environnement, y compris les certifications CE et ROHS requises pour les normes européennes, reflétant notre engagement envers l'excellence et la durabilité."  
+        },
+        "offerings": {
+            "title": "Nos Offres",
+            "statement": "Chez Zita Lighting, nous plaçons toujours la qualité et la satisfaction de nos clients en priorité. Nos produits sont conçus pour répondre aux normes les plus élevées en matière de durabilité et de performance. Nous garantissons cela en :",
+            "features1": "Solutions d'éclairage durables avec douilles E-27 et GU-10.",
+            "features2": "Produits résistants aux intempéries conçus pour une utilisation extérieure à long terme.",
+            "features3": "Une large gamme de designs adaptés à vos besoins.",
+            "subFeature1": "Contrairement aux luminaires LED intégrés qui deviennent des déchets lorsque la source lumineuse tombe en panne, nos conceptions à douille permettent un remplacement facile de l'ampoule, prolongeant ainsi la durée de vie du produit.",
+            "subFeature2": "Fabriqués pour résister au soleil, à la pluie et aux variations de température, nos luminaires conservent leur utilité et leur apparence au fil du temps.",
+            "subFeature3": "Nous proposons divers styles et configurations pour s'adapter à vos différents espaces extérieurs."
+        },
+        "global_reach": {
+            "title": "Présence Internationale",
+            "description": "Avec des exportations vers plus de 20 pays, Zita Lighting est devenu un partenaire de confiance à l'échelle mondiale."
+        }
+    },
+    "mission": {
+        "title": "Notre Mission",
+        "description": "Créer des solutions d'éclairage extérieur durables, innovantes et durables qui dépassent les attentes des clients."
+    },
+    "vision": {
+        "title": "Notre Vision",
+        "description": "Devenir un leader mondial de l'éclairage extérieur, reconnu pour notre engagement envers la qualité, l'innovation et les pratiques respectueuses de l'environnement."
+    },
+    "footer":{
+        "quick_links":"Liens Rapides",
+        "legal_and_social_and_cookie_policy": "Politique Juridique, Sociale et de Cookies",
+        "certifications":"Certifications"
+    }
+}

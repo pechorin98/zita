@@ -1,0 +1,99 @@
+{
+    "home": {
+        "products": {
+            "title": "Products",
+            "description": "Discover our durable, stylish, and UV-protected outdoor lighting solutions. All our goods are manufactured with original ABS and PC materials. Check out our wide product range designed for long-lasting performance and download our catalogue for detailed specifications.",
+            "button":"To Catalouge!"
+        },
+        "about_us": {
+            "title": "About Us",
+            "description": "Learn more about Zita Lighting’s 40 years of expertise, 100% Turkish-made products, and commitment to quality in outdoor lighting.",
+            "button":"learn More!"
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Have questions or want to see our manufacturing process in action? Contact us to schedule your appointment and visit our factory in Istanbul. We are always happy to welcome you and discuss how we can meet your lighting needs.",
+            "button":"Contact"
+        },
+        "certifications": {
+            "title": "Certifications",
+            "description": "Zita Lighting adheres to the strict industry guidelines for quality assurance and manufacturing. Our dedication to upholding an effective quality management system and making sure that every product we offer satisfies strict quality and safety requirements is accredited by our ISO 9001:2015 certification. Furthermore, every one of our goods satisfies European Union safety, health, and environmental protection regulations by being certified by the CE and ROHS.",
+            "button":"See Certifications"
+        }
+    },
+    "products": {
+        "catalogue": {
+            "title": "Zita Lighting 2025 Catalogue",
+            "description": "Check our latest catalogue and look through our durable, stylish, and reliable lighting solutions."
+        },
+        "uv_protection": {
+            "title": "UV Protection: Built to Last Under the Sun",
+            "features1": "1. Resistant to Colour Changes: Keeps your garden lights & pole lights looking as good as new, even after years of sun exposure.",
+            "features2": "2. Enhanced Durability: Our products maintain their strength and appearance under harsh weather conditions, ensuring they remain reliable for years, with minimum 5-year guarantees."
+        },
+        "materials": {
+            "title": "Produced with Original ABS and PC Materials",
+            "features1": "Shape Conservation: Compared to unregulated & mixed materials, our products resist deformation, even under intense weather conditions.",
+            "features2": "Consistent Colours: Enjoy consistent looks over time, without fading or discoloration.",
+            "features3": "Engineered for Quality: Designed to last for years, offering both functionality and style."              
+        },
+        "sockets": {
+            "title": "Longevity with E-27 & GU-10 Sockets",
+            "features1": "Longevity: Replace the bulb, not the entire product. This ensures you can use our products with sockets for years, instead of replacing it.",
+            "features2": "Customisation: Choose your preferred bulb for different lighting effects or colours.",
+            "features3": "Eco-Friendly Solution: Reduce waste by avoiding single-use lights, making our products a sustainable choice."
+        },
+        "certifications": {
+            "title": "Comes with all necessary Certifications",
+            "description": "Our products meet the highest safety and environmental standards, including CE and ROHS certifications."
+        }
+    },
+    "about_us": {
+        "who_we_are": {
+            "title": "Who We Are",
+            "description": "Founded in 2010, Zita Lighting is a Lighting manufacturing company that carries over 40 years of experience in creating durable outdoor lighting solutions. Based in Istanbul, we produce all our products at home. We are proud to combine efficiency, style, and latest technologies to produce quality & safe products."
+        },
+        "commitment": {
+            "title": "Our Commitment to Quality",
+            "statement": "At Zita Lighting, we always put quality and customer satisfaction first. Our products are designed to meet the highest standards of durability and performance. We ensure this by:",
+            "features1": "UV protection to resist yellowing and fading.",
+            "features2": "Original ABS and PC materials for long-lasting strength.",
+            "features3": "Minimum 5-year guarantees on all outdoor lighting solutions.",
+            "subFeature1": "Unlike integrated LED fixtures that become waste when the light source fails, our socket-based designs allow for easy bulb replacement, extending the product’s lifespan.",
+            "subFeature2": "Manufactured to endure sun, rain, and temperature changes, our lights maintain their usability and appearance over time.",
+            "subFeature3": "We offer various styles and configurations to suit your different outdoor spaces."  
+        },
+        "certifications": {
+            "title": "International Standards and Certifications",
+                "des1": "As Zita Lighting, we are always reaching high industry standards for manufacturing and safety. Zita Lighting holds the ISO 9001:2015 certification, ensuring top-tier quality management practices in every product we deliver.",
+            "des2": "Our products also meet essential safety and environmental standards, including necessary CE and ROHS certifications for EU standards, reflecting our dedication to excellence and sustainability."
+        },
+        "offerings": {
+            "title": "What We Offer",
+            "statement": "As a representative of quality in the outdoor lighting manufacturing industry, Zita Lighting specializes in:",
+            "features1": "Durable lighting solutions with E-27 and GU-10 sockets.",
+            "features2": "All-weather products designed for long-term outdoor use.",
+            "features3": "A wide range of designs to suit your needs.",
+            "subFeature1": "Unlike integrated LED fixtures that become waste when the light source fails, our socket-based designs allow for easy bulb replacement, extending the product’s lifespan.",
+            "subFeature2": "Manufactured to endure sun, rain, and temperature changes, our lights maintain their usability and appearance over time.",
+            "subFeature3": "We offer various styles and configurations to suit your different outdoor spaces."
+        },
+        "global_reach": {
+            "title": "Global Reach",
+            "description": "With exports to over 20 countries, Zita Lighting has become a trusted partner worldwide."
+        }
+    },
+    "mission": {
+        "title": "Our Mission",
+        "description": "To create durable, innovative, and sustainable outdoor lighting solutions that exceed customer expectations."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "description": "To become a global leader in outdoor lighting, known for our commitment to quality, innovation, and environmentally conscious practices."
+    },
+    "footer":{
+        "quick_links":"Quick Links",
+        "legal_and_social_and_cookie_policy": "Legal, Social, and Cookie Policy",
+        "certifications":"Certifications"
+    }
+}

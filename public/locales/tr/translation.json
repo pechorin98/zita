@@ -1,0 +1,99 @@
+{
+    "home": {
+        "products": {
+            "title": "Ürünler",
+            "description": "Dayanıklı, şık ve UV korumalı dış mekan aydınlatma çözümlerimizi keşfedin. Tüm ürünlerimiz orijinal ABS ve PC malzemelerden üretilmiştir. Uzun ömürlü performans için tasarlanmış geniş ürün yelpazemizi inceleyin ve ayrıntılı teknik özellikler için kataloğumuzu indirin.",
+            "button":"Kataloğa Git!"
+        },
+        "about_us": {
+            "title": "Hakkımızda",
+            "description": "Zita Lighting'in 40 yıllık uzmanlığını, %100 Türkiye'de üretilmiş ürünlerini ve dış mekan aydınlatmasındaki kaliteye olan bağlılığını keşfedin.",
+            "button":"Daha Fazla Bilgi!"
+        },
+        "contact": {
+            "title": "İletişim",
+            "description": "Sorularınız mı var ya da üretim sürecimizi yakından görmek mi istiyorsunuz? Randevu almak ve İstanbul’daki fabrikamızı ziyaret etmek için bizimle iletişime geçin. Sizi ağırlamaktan ve aydınlatma ihtiyaçlarınızı nasıl karşılayabileceğimizi görüşmekten mutluluk duyarız.",
+            "button":"İletişim"
+        },
+        "certifications": {
+            "title": "Sertifikalar",
+            "description": "Zita Lighting, kalite güvencesi ve üretim için katı endüstri yönergelerine uymaktadır. Etkili bir kalite yönetim sistemini sürdürme ve sunduğumuz her ürünün sıkı kalite ve güvenlik gereksinimlerini karşıladığından emin olma taahhüdümüz, ISO 9001:2015 sertifikamız ile onaylanmıştır. Ayrıca, tüm ürünlerimiz Avrupa Birliği güvenlik, sağlık ve çevre koruma yönetmeliklerine uygunluk gösteren CE ve ROHS sertifikalarına sahiptir.",
+            "button":"Sertifikaları Gör"
+        }
+    },
+    "products": {
+        "catalogue": {
+            "title": "Zita Lighting 2025 Kataloğu",
+            "description": "En yeni kataloğumuzu inceleyin ve dayanıklı, şık ve güvenilir aydınlatma çözümlerimizi keşfedin."
+        },
+        "uv_protection": {
+            "title": "UV Koruması: Güneş Altında Uzun Ömürlü Kullanım",
+            "features1": "1. Renk Değişimine Karşı Dayanıklı: Bahçe lambalarınız ve direk lambalarınız yıllar boyunca güneşe maruz kalsa bile yeni gibi görünmeye devam eder.",
+            "features2": "2. Gelişmiş Dayanıklılık: Ürünlerimiz, sert hava koşullarına karşı dayanıklılığını ve görünümünü koruyarak, en az 5 yıl garanti ile uzun ömürlü olmasını sağlar."
+        },
+        "materials": {
+            "title": "Orijinal ABS ve PC Malzemelerle Üretilmiştir",
+            "features1": "Şekil Koruma: Düzenlemeye tabi olmayan ve karışık malzemelerle karşılaştırıldığında, ürünlerimiz aşırı hava koşullarında bile deforme olmaz.",
+            "features2": "Tutarlı Renkler: Zamanla solma veya renk değişimi olmadan sabit bir görünüm sağlar.",
+            "features3": "Kalite İçin Tasarlandı: Yıllarca dayanacak şekilde tasarlanmış olup hem işlevsellik hem de stil sunar."  
+        },
+        "sockets": {
+            "title": "E-27 ve GU-10 Duylarla Uzun Ömürlülük",
+            "features1": "Uzun Ömürlülük: Ampulü değiştirin, tüm ürünü değil. Böylece ürünlerimizi yıllarca kullanabilirsiniz.",
+            "features2": "Kişiselleştirme: Farklı aydınlatma efektleri veya renkler için tercih ettiğiniz ampulü seçin.",
+            "features3": "Çevre Dostu Çözüm: Tek kullanımlık lambalardan kaçınarak atık oluşumunu azaltın ve ürünlerimizi sürdürülebilir bir seçim haline getirin."
+        },
+        "certifications": {
+            "title": "Gerekli Tüm Sertifikalarla Birlikte",
+            "description": "Ürünlerimiz en yüksek güvenlik ve çevre standartlarını karşılamakta olup CE ve ROHS sertifikalarına sahiptir."
+        }
+    },
+    "about_us": {
+        "who_we_are": {
+            "title": "Biz Kimiz",
+            "description": "2010 yılında kurulan Zita Lighting, 40 yılı aşkın tecrübeye sahip bir aydınlatma üretim firmasıdır. Dayanıklı dış mekan aydınlatma çözümleri sunan firmamız, İstanbul merkezli olarak tüm üretimini yerel olarak gerçekleştirmektedir. Verimlilik, şıklık ve en son teknolojiyi bir araya getirerek kaliteli ve güvenli ürünler sunmaktan gurur duyuyoruz."
+        },
+        "commitment": {
+            "title": "Kaliteye Bağlılığımız",
+            "features1": "Sararma ve solmaya karşı UV koruması.",
+            "features2": "Uzun ömürlü dayanıklılık için orijinal ABS ve PC malzemeler.",
+            "features3": "Tüm dış mekan aydınlatma çözümleri için en az 5 yıl garanti.",
+            "subFeature1": "Entegre LED armatürlerin ışık kaynağı arızalandığında atık hale gelmesinin aksine, duy tabanlı tasarımlarımız ampulün kolayca değiştirilmesine olanak tanır ve ürünün ömrünü uzatır.",
+            "subFeature2": "Güneşe, yağmura ve sıcaklık değişimlerine dayanacak şekilde üretilen aydınlatmalarımız, zamanla işlevselliğini ve görünümünü korur.",
+            "subFeature3": "Farklı dış mekan alanlarınıza uyacak çeşitli stiller ve konfigürasyonlar sunuyoruz."  
+        },
+        "certifications": {
+            "title": "Uluslararası Standartlar ve Sertifikalar",
+            "des1": "Zita Lighting olarak her zaman üretim ve güvenlik konusunda yüksek endüstri standartlarına ulaşmaktayız. Zita Lighting, ISO 9001:2015 sertifikasına sahiptir ve bu sayede sunduğumuz her üründe üst düzey kalite yönetimi uygulamalarını garanti eder.",
+            "des2": "Ürünlerimiz ayrıca temel güvenlik ve çevre standartlarını karşılamakta olup, AB standartlarına uygun gerekli CE ve ROHS sertifikalarına sahiptir. Bu, mükemmeliyet ve sürdürülebilirliğe olan bağlılığımızın bir göstergesidir."
+              
+        },
+        "offerings": {
+            "title": "Sunduğumuz Hizmetler",
+            "statement": "Zita Lighting olarak her zaman kaliteyi ve müşteri memnuniyetini ön planda tutuyoruz. Ürünlerimiz, dayanıklılık ve performans açısından en yüksek standartları karşılayacak şekilde tasarlanmıştır. Bunu şu şekilde sağlıyoruz:",
+            "features1": "E-27 ve GU-10 duylarla dayanıklı aydınlatma çözümleri.",
+            "features2": "Uzun süreli dış mekan kullanımı için tasarlanmış hava koşullarına dayanıklı ürünler.",
+            "features3": "Farklı ihtiyaçlarınıza uygun geniş tasarım seçenekleri.",
+            "subFeature1": "Entegre LED armatürlerin ışık kaynağı arızalandığında atık hale gelmesinin aksine, duy tabanlı tasarımlarımız ampulün kolayca değiştirilmesine olanak tanır ve ürünün ömrünü uzatır.",
+            "subFeature2": "Güneşe, yağmura ve sıcaklık değişimlerine dayanacak şekilde üretilen aydınlatmalarımız, zamanla işlevselliğini ve görünümünü korur.",
+            "subFeature3": "Farklı dış mekan alanlarınıza uyacak çeşitli stiller ve konfigürasyonlar sunuyoruz."  
+        },
+        "global_reach": {
+            "title": "Küresel Etki",
+            "description": "20'den fazla ülkeye ihracat yapan Zita Lighting, dünya çapında güvenilir bir iş ortağı haline gelmiştir."
+        }
+    },
+    "mission": {
+        "title": "Misyonumuz",
+        "description": "Dayanıklı, yenilikçi ve sürdürülebilir dış mekan aydınlatma çözümleri yaratarak müşteri beklentilerini aşmak."
+    },
+    "vision": {
+        "title": "Vizyonumuz",
+        "description": "Kalite, yenilikçilik ve çevre dostu uygulamalara olan bağlılığımız ile tanınan, dış mekan aydınlatma alanında küresel bir lider olmak."
+    },
+    "footer":{
+        "quick_links":"hızlı bağlantılar",
+        "legal_and_social_and_cookie_policy": "yasal ve sosyali ve çerez politikası",
+        "certifications":"sertifikalar"
+    }
+}

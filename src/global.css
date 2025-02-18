@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Roboto Condensed', "Roboto", "sans-serif";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.paraText {
+    font-family: "Roboto", "sans-serif";
+    font-size: 18px;
+    color: #555555;
+    margin: 0;
+    padding: 0;
+}
+
+.titleText {
+    font-family: "Roboto", "sans-serif";
+    color: #000000;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.text-sm {
+    font-family: "Roboto", "sans-serif";
+    color: #555555;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.footerTitle {
+    font-family: "Roboto Condensed", "sans-serif";
+    color: #504f4f;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.text-smLink {
+    font-family: "Roboto", "sans-serif";
+    color: #555555;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.text-smLink:hover {
+    color: #000000;
+    /* Change text color on hover */
+    transform: scale(1.05);
+    /* Slightly scale up the link on hover */
+}
+
+.text-smLink:active {
+    color: #333333;
+    /* Change text color on active */
+    transform: scale(0.95);
+    /* Slightly scale down the link on active */
+}
+
+.footerSectionTitle {
+    font-family: "Roboto Condensed", "sans-serif";
+    color: #504f4f;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.footerSmallTitle {
+    font-family: "Roboto Condensed", "sans-serif";
+    color: #504f4f;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.subText {
+    font-family: "Roboto Condensed", "sans-serif";
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+@media (max-width:900px) {
+    .paraText {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:1024px) {
+    .navlink {
+        font-size: 28px;
+        font-weight: 200;
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "home": {
+        "products": {
+            "title": "Produkte",
+            "description": "Entdecken Sie unsere langlebigen, stilvollen und UV-geschützten Außenbeleuchtungslösungen. Alle unsere Produkte werden aus originalen ABS- und PC-Materialien hergestellt. Sehen Sie sich unser breites Produktsortiment an, das für eine lange Lebensdauer entwickelt wurde, und laden Sie unseren Katalog für detaillierte Spezifikationen herunter.",
+            "button":"Zum Katalog!"
+        },
+        "about_us": {
+            "title": "Über Uns",
+            "description": "Erfahren Sie mehr über die 40-jährige Expertise von Zita Lighting, die 100 % in der Türkei hergestellten Produkte und unser Engagement für Qualität in der Außenbeleuchtung.",
+            "button":"Mehr erfahren!"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "description": "Haben Sie Fragen oder möchten Sie unseren Herstellungsprozess in Aktion sehen? Kontaktieren Sie uns, um einen Termin zu vereinbaren und unsere Fabrik in Istanbul zu besuchen. Wir freuen uns, Sie willkommen zu heißen und zu besprechen, wie wir Ihre Beleuchtungsbedürfnisse erfüllen können.",
+            "button":"Kontakt"
+        },
+        "certifications": {
+            "title": "Zertifizierungen",
+            "description": "Zita Lighting hält sich an strenge Branchenrichtlinien zur Qualitätssicherung und Herstellung. Unser Engagement für ein effektives Qualitätsmanagementsystem und die Sicherstellung, dass jedes von uns angebotene Produkt strenge Qualitäts- und Sicherheitsanforderungen erfüllt, wird durch unsere ISO 9001:2015-Zertifizierung bestätigt. Darüber hinaus entsprechen alle unsere Produkte den Sicherheits-, Gesundheits- und Umweltschutzvorschriften der Europäischen Union durch die CE- und ROHS-Zertifizierungen.",
+            "button":"Zertifizierungen anzeigen"
+        }
+    },
+    "products": {
+        "catalogue": {
+            "title": "Zita Lighting 2025 Katalog",
+            "description": "Sehen Sie sich unseren neuesten Katalog an und entdecken Sie unsere langlebigen, stilvollen und zuverlässigen Beleuchtungslösungen."
+        },
+        "uv_protection": {
+            "title": "UV-Schutz: Entwickelt für Langlebigkeit unter der Sonne",
+            "features1":   "1. Beständig gegen Farbveränderungen: Hält Ihre Garten- und Straßenlaternen auch nach Jahren der Sonneneinstrahlung wie neu.",
+            "features2":  "2. Erhöhte Haltbarkeit: Unsere Produkte behalten ihre Festigkeit und ihr Aussehen auch unter rauen Wetterbedingungen und bleiben jahrelang zuverlässig mit einer Mindestgarantie von 5 Jahren."
+        },
+        "materials": {
+            "title": "Hergestellt aus Original-ABS- und PC-Materialien",
+            "features1": "Formbeständigkeit: Im Vergleich zu nicht regulierten und gemischten Materialien verformen sich unsere Produkte auch unter extremen Wetterbedingungen nicht.",
+            "features2": "Konstante Farben: Genießen Sie ein gleichmäßiges Aussehen über die Zeit, ohne Verblassen oder Verfärbung.",
+            "features3": "Für Qualität entwickelt: Entwickelt für eine lange Lebensdauer, mit sowohl Funktionalität als auch Stil."             
+        },
+        "sockets": {
+            "title": "Langlebigkeit mit E-27 & GU-10 Fassungen",
+            "features1": "Langlebigkeit: Ersetzen Sie die Glühbirne, nicht das gesamte Produkt. So können Sie unsere Produkte über Jahre hinweg mit Fassungen nutzen.",
+            "features2": "Anpassung: Wählen Sie die gewünschte Glühbirne für verschiedene Lichteffekte oder Farben.",
+            "features3": "Umweltfreundliche Lösung: Reduzieren Sie Abfall, indem Sie Einwegleuchten vermeiden und unsere Produkte zu einer nachhaltigen Wahl machen."
+        },
+        "certifications": {
+            "title": "Alle notwendigen Zertifizierungen enthalten",
+            "description": "Unsere Produkte entsprechen den höchsten Sicherheits- und Umweltstandards, einschließlich CE- und ROHS-Zertifizierungen."
+        }
+    },
+    "about_us": {
+        "who_we_are": {
+            "title": "Wer Wir Sind",
+            "description": "Gegründet im Jahr 2010, ist Zita Lighting ein Unternehmen für die Herstellung von Beleuchtung, das über 40 Jahre Erfahrung in der Entwicklung langlebiger Außenbeleuchtungslösungen mitbringt. Mit Sitz in Istanbul produzieren wir alle unsere Produkte vor Ort. Wir sind stolz darauf, Effizienz, Stil und neueste Technologien zu kombinieren, um qualitativ hochwertige und sichere Produkte herzustellen."
+        },
+        "commitment": {
+            "title": "Unser Qualitätsversprechen",
+            "features1": "UV-Schutz gegen Vergilbung und Verblassen.",
+            "features2": "Originale ABS- und PC-Materialien für langlebige Stabilität.",
+            "features3": "Mindestgarantie von 5 Jahren auf alle Außenbeleuchtungslösungen.",
+            "subFeature1": "Im Gegensatz zu integrierten LED-Leuchten, die entsorgt werden müssen, wenn die Lichtquelle ausfällt, ermöglichen unsere sockelbasierten Designs einen einfachen Lampenwechsel und verlängern so die Lebensdauer des Produkts.",
+            "subFeature2": "Unsere Leuchten sind so gefertigt, dass sie Sonne, Regen und Temperaturschwankungen standhalten und über die Zeit hinweg ihre Funktionalität und ihr Erscheinungsbild bewahren.",
+            "subFeature3": "Wir bieten verschiedene Stile und Konfigurationen, die sich an Ihre unterschiedlichen Außenbereiche anpassen."
+        },
+        "certifications": {
+            "title": "Internationale Standards und Zertifizierungen",
+            "des1": "Als Zita Lighting erreichen wir stets hohe Industriestandards in der Produktion und Sicherheit. Zita Lighting ist nach ISO 9001:2015 zertifiziert, was erstklassige Qualitätsmanagementpraktiken für jedes von uns gelieferte Produkt gewährleistet.",
+            "des2": "Unsere Produkte erfüllen zudem wichtige Sicherheits- und Umweltstandards, einschließlich der erforderlichen CE- und ROHS-Zertifizierungen gemäß EU-Normen, was unser Engagement für Exzellenz und Nachhaltigkeit widerspiegelt."
+        },
+        "offerings": {
+            "title": "Unser Angebot",
+            "statement": "Bei Zita Lighting stehen Qualität und Kundenzufriedenheit immer an erster Stelle. Unsere Produkte sind darauf ausgelegt, die höchsten Standards in Bezug auf Langlebigkeit und Leistung zu erfüllen. Dies gewährleisten wir durch:",
+            "features1": "Langlebige Beleuchtungslösungen mit E-27 und GU-10 Fassungen.",
+            "features2": "Wetterfeste Produkte, die für den langfristigen Außeneinsatz konzipiert sind.",
+            "features3": "Eine breite Palette an Designs, die Ihren Bedürfnissen entsprechen.",
+            "subFeature1": "Im Gegensatz zu integrierten LED-Leuchten, die entsorgt werden müssen, wenn die Lichtquelle ausfällt, ermöglichen unsere sockelbasierten Designs einen einfachen Lampenwechsel und verlängern so die Lebensdauer des Produkts.",
+            "subFeature2": "Unsere Leuchten sind so gefertigt, dass sie Sonne, Regen und Temperaturschwankungen standhalten und über die Zeit hinweg ihre Funktionalität und ihr Erscheinungsbild bewahren.",
+            "subFeature3": "Wir bieten verschiedene Stile und Konfigurationen, die sich an Ihre unterschiedlichen Außenbereiche anpassen."
+        },
+        "global_reach": {
+            "title": "Globale Reichweite",
+            "description": "Mit Exporten in über 20 Länder ist Zita Lighting weltweit ein vertrauenswürdiger Partner geworden."
+        }
+    },
+    "mission": {
+        "title": "Unsere Mission",
+        "description": "Dauerhafte, innovative und nachhaltige Außenbeleuchtungslösungen zu schaffen, die die Erwartungen der Kunden übertreffen."
+    },
+    "vision": {
+        "title": "Unsere Vision",
+        "description": "Ein weltweit führender Anbieter von Außenbeleuchtung zu werden, bekannt für unser Engagement für Qualität, Innovation und umweltbewusste Praktiken."
+    },
+    "footer":{
+        "quick_links":"Schnelle Links"  ,
+        "legal_and_social_and_cookie_policy": "Rechtliche, soziale und Cookie-Richtlinie",
+        "certifications":"Zertifikate"
+    }
+}
