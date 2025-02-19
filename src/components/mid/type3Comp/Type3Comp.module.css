@@ -12,9 +12,8 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    column-gap: 50px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 7.5%;
+    padding-right: 5%;
 }
 .containerRightText{
     display: flex;

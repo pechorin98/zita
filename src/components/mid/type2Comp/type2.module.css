@@ -62,9 +62,13 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth scaling and box shadow */
 }
 
-.imgContainerIcon img:nth-child(1),
-.imgContainerIcon img:nth-child(3) {
-    width: 20% !important;
+.imgContainerIcon img:nth-child(1)
+ {
+    width: 200px !important;
+}
+
+.imgContainerIcon img:nth-child(3){
+    width: 250px   !important;
 }
 
 .imgContainer img:hover {

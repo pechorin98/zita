@@ -6,11 +6,13 @@ import Type3CompWithAnimation from '../../components/mid/type3Comp/Type3CompWith
 import { useParams } from 'react-router-dom'
 import Type3Comp from '../../components/mid/type3Comp/Type3Comp';
 import Type4Comp from '../../components/mid/type4Comp/Type4Comp';
+import { useNavigate } from 'react-router-dom';
 
 function Product() {
 
     const { t } = useTranslation();
     const { lng } = useParams();
+    const navigate = useNavigate();
 
     const [windowsWith, setWindowsWith] = useState(null);
 
@@ -34,7 +36,8 @@ function Product() {
             <section>
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
                     text={t('products.catalogue.description')} src1="/pages/products/catalog.jpg"
-                    src2="/pages/products/catalogp1.jpg" src3="/pages/products/catalogp2.jpg" version="wrapperheader" imgContainerVersion="imgContainer" />
+                    src2="/pages/products/catalogp1.jpg" src3="/pages/products/catalogp2.jpg" version="wrapperheader" imgContainerVersion="imgContainer"
+                    navigate={navigate} route1={`/${lng}/Catalog`} route2={`/${lng}/Catalog`} route3={`/${lng}/Catalog`} />
             </section>
             {/*UV Component*/}
             <section>
@@ -52,14 +55,14 @@ function Product() {
             {/*Socket Component*/}
             <section>
                 <Type3CompWithAnimation title={t('products.sockets.title')}
-                    text={t('products.sockets.features1')} text2={t('products.sockets.features2')} size={windowsWith}
+                    text={t('products.sockets.features1')} text2={t('products.sockets.features2')} size={windowsWith} imgStyle={{ "width": "500px" }}
                     text3={t('products.sockets.features3')} version="containerLeftText" Component={Type4Comp} src="/pages/products/socketIcon.png" />
             </section>
             {/*Sertifika Components*/}
             <Type2CompImgAnimation title={t('products.certifications.title')}
                 text={t('products.certifications.description')} imgContainerVersion="imgContainerIcon" contextContainerVersion="contextContainer"
                 src1="/pages/products/ceIcon.png" src2="/pages/products/rohs.png" src3="/pages/products/ısoIcon.webp" version="wrapperSigle" isButton
-                buttonText={t('home.certifications.button')} />
+                buttonText={t('home.certifications.button')} buttonRoute={`/${lng}/Certifications`} />
         </section>
     );
 }
