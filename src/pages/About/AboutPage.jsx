@@ -5,7 +5,7 @@ import Type2CompImgAnimation from '../../components/mid/type2Comp/Type2CompWithA
 import Type3CompWithAnimation from '../../components/mid/type3Comp/Type3CompWithAnimation';
 import Type3Comp from '../../components/mid/type3Comp/Type3Comp';
 import Type4Comp from '../../components/mid/type4Comp/Type4Comp';
-import Type5Comp from '../../components/mid/type5Comp/type5Comp';
+import Type5Comp from '../../components/mid/type5Comp/Type5Comp';
 import Type6Comp from '../../components/mid/type6Comp/Type6Comp';
 import { useTranslation } from 'react-i18next';
 
