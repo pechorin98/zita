@@ -49,7 +49,7 @@ function Home() {
                 <Type1CompWithAnimation title={t('home.products.title')}
                 version="containerLeftText"
                 text={t('home.products.description')}
-                buttonText={t('home.products.button')}
+                buttonText={t('home.products.button')} buttonUrl={`/${lng}/Catalog`}
                 src="/envImg/katalogv2.webp" imgStyle={{"width":"500px"}} size={windowsWith} style={{"marginTop":"50px"}}/>
             </section>
             {/*About Us Component*/}
@@ -62,7 +62,7 @@ function Home() {
             {/*Certifications Component*/}
             <section>
                 <Type2CompWithAnimation title={t('home.certifications.title')}
-                text={t('home.certifications.description')}
+                text={t('home.certifications.description')} buttonRoute={`/${lng}/Certifications`}
                 src2="/envImg/ptcser.webp" src3="/envImg/emcser.webp" src1="/envImg/RoHSser.png" isButton 
                 buttonText={t('home.certifications.button')} version="wrapper" imgContainerVersion="imgContainer"/>
             </section>

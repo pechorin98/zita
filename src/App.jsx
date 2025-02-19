@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { 
-  BrowserRouter as Router, 
-  Route, 
-  Routes, 
-  Navigate, 
-  useParams, 
-  useLocation 
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  useParams,
+  useLocation
 } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import i18n from './i18n';
@@ -15,6 +15,12 @@ import Contact from './pages/ContactPage';
 import Product from './pages/Product/ProductPage';
 import Navbar from './components/macro/navbar/navbar';
 import Footer from './components/macro/footer/footer';
+import Catalog from './pages/Catalog/Catalog';
+import Cert from './pages/Cert/Cert';
+import Rohs from './pages/Rohs/Rohs';
+import Emc from './pages/emc/emc';
+import Ptc from './pages/Ptc/Ptc';
+import Iso from './pages/Iso9001/Iso9001';
 
 // Updated PageWrapper without absolute positioning
 const PageWrapper = ({ children }) => {
@@ -78,38 +84,74 @@ function LanguageRoutes() {
       <div style={{ flex: 1 }}>
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route 
-              path="/" 
+            <Route
+              path="/"
               element={
                 <PageWrapper>
                   <Home />
                 </PageWrapper>
-              } 
+              }
             />
-            <Route 
-              path="/About" 
+            <Route
+              path="/About"
               element={
                 <PageWrapper>
                   <About />
                 </PageWrapper>
-              } 
+              }
             />
-            <Route 
-              path="/Contact" 
+            <Route
+              path="/Contact"
               element={
                 <PageWrapper>
                   <Contact />
                 </PageWrapper>
-              } 
+              }
             />
-            <Route 
-              path="/Product" 
+            <Route
+              path="/Product"
               element={
                 <PageWrapper>
                   <Product />
                 </PageWrapper>
-              } 
+              }
             />
+            <Route path='/Catalog'
+              element={
+                <PageWrapper>
+                  <Catalog />
+                </PageWrapper>
+              } />
+            <Route path='/Certifications'
+              element={
+                <PageWrapper>
+                  <Cert />
+                </PageWrapper>
+              } />
+            <Route path='/Rohs'
+              element={
+                <PageWrapper>
+                  <Rohs />
+                </PageWrapper>
+              } />
+            <Route path='/Emc'
+              element={
+                <PageWrapper>
+                  <Emc />
+                </PageWrapper>
+              } />
+            <Route path='/Ptc'
+              element={
+                <PageWrapper>
+                  <Ptc />
+                </PageWrapper>
+              } />
+            <Route path='/Iso'
+              element={
+                <PageWrapper>
+                  <Iso />
+                </PageWrapper>
+              } />
             <Route path="*" element={<Navigate to={`/${lng}/`} replace />} />
           </Routes>
         </AnimatePresence>

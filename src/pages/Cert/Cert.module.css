@@ -1,0 +1,27 @@
+.wrapper{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.imgContainer{
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+.imgContainer:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.imgContainer:active {
+    transform: scale(0.95); /* Slightly scale down the image on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjust box shadow on active */
+}
