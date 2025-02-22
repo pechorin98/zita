@@ -69,7 +69,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h4 className="footerTitle">{translationValues.quickLinks}</h4>
+                        <h1 className="footerTitle">{translationValues.quickLinks}</h1>
                         <div className={styles.quickContainer}>
                             <a className="text-smLink" href={`/${lng}/About`}>{translationValues.aboutUs}</a>
                             <a className="text-smLink" href={`/${lng}/Product`}>{translationValues.products}</a>
@@ -80,7 +80,7 @@ const Footer = () => {
 
                     {/* Legal & Social Links */}
                     <div className={styles.lawContainer}>
-                        <h4 className="footerTitle">{translationValues.legalPolicy}</h4>
+                        <h1 className="footerTitle">{translationValues.legalPolicy}</h1>
                         <div className={styles.policyContainer}>
                             <a className="text-smLink" href="">Cookie Policy</a>
                             <a className="text-smLink" href="">{translationValues.certifications}</a>
