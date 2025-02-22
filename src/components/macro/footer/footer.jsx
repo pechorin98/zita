@@ -85,9 +85,29 @@ const Footer = () => {
                             <a className="text-smLink" href="">Cookie Policy</a>
                             <a className="text-smLink" href="">{translationValues.certifications}</a>
                             <div className={styles.linksContainer}>
-                                <a href="https://www.facebook.com/AydinlatmaZita" className={styles.socialIcon}><Facebook /></a>
-                                <a href="https://www.linkedin.com/company/zitalighting/" className={styles.socialIcon}><Linkedin /></a>
-                                <a href="https://www.instagram.com/zitalighting/" className={styles.socialIcon}><Instagram /></a>
+                                <a href="https://www.facebook.com/AydinlatmaZita"
+                                    className={styles.socialIcon}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit our Facebook page">
+                                    <Facebook />
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/zitalighting/"
+                                    className={styles.socialIcon}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit our LinkedIn page">
+                                    <Linkedin />
+                                </a>
+
+                                <a href="https://www.instagram.com/zitalighting/"
+                                    className={styles.socialIcon}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Visit our Instagram page">
+                                    <Instagram />
+                                </a>
                             </div>
                         </div>
                     </div>
