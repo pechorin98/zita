@@ -26,9 +26,9 @@ const Footer = () => {
             <section className={styles.container}>
                 <div>
                     <MyMap />
-                    <h3 className="footerSectionTitle" style={{ marginTop: "24px" }}>
+                    <h1 className="footerSectionTitle" style={{ marginTop: "24px" }}>
                         ZİTA ELK. AYDINLATMA SAN. ve TİC.LTD.ŞTİ.
-                    </h3>
+                    </h1>
                     <small className="footerSmallTitle">
                         ZİTA ELEKTRİK AYDINLATMA SANAYİ ve TİCARET LİMİTED ŞİRKETİ
                     </small>
