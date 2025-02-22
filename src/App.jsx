@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import i18n from './i18n';
 import Home from './pages/home/HomePage';
 import About from './pages/About/AboutPage';
-import Contact from './pages/ContactPage';
+import Contact from './pages/Contact/ContactPage';
 import Product from './pages/Product/ProductPage';
 import Navbar from './components/macro/navbar/navbar';
 import Footer from './components/macro/footer/footer';

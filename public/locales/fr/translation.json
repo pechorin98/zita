@@ -1,5 +1,6 @@
 {
     "home": {
+        "home": "Accueil",
         "products": {
             "title": "Produits",
             "description": "Découvrez nos solutions d'éclairage extérieur durables, élégantes et protégées contre les UV. Tous nos produits sont fabriqués avec des matériaux ABS et PC d'origine. Consultez notre large gamme de produits conçus pour une performance durable et téléchargez notre catalogue pour des spécifications détaillées.",
@@ -94,5 +95,16 @@
         "quick_links":"Liens Rapides",
         "legal_and_social_and_cookie_policy": "Politique Juridique, Sociale et de Cookies",
         "certifications":"Certifications"
-    }
+    },
+    "contact": {
+        "title": "Contactez-nous",
+        "text": "Contactez-nous pour plus d'informations sur nos produits ou pour organiser un rendez-vous afin de visiter notre usine. Nous sommes là pour répondre à toutes vos questions.",
+        "Full Name": "Nom complet",
+        "Company Name": "Nom de l'entreprise",
+        "E-Mail Address": "Adresse e-mail",
+        "Phone Number": "Numéro de téléphone",
+        "Subject": "Sujet",
+        "Message": "Message",
+        "Contact Informations": "Informations de contact"
+      }
 }

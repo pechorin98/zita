@@ -102,7 +102,7 @@
     transition: transform 0.5s;
 }
 
-/*Mobile Side Navbar Menu Styling*/
+/* Mobile Side Navbar Menu Styling */
 /* Ortak stiller (kapalı/açık fark etmeksizin) */
 .menuBase {
     position: absolute;
@@ -128,15 +128,16 @@
     transform: translateX(-100%);
 }
 
-/*Mobile Side Navbar Menu Styling*/
+/* Mobile Side Navbar Menu Styling */
 
-/*Placement of the sidenavbar*/
+/* Placement of the sidenavbar */
 .sideLinkContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 30px;
     margin-top: 35px;
+    padding-left: 3%;
 }
 
 /* Mevcut link animasyonlarını sideLinkContainer'a etki edecek şekilde kopyalıyoruz */
@@ -145,6 +146,8 @@
     position: relative;
     padding: 5px;
     transition: 0.75s;
+    font-size: 42px;
+    font-weight: 200;
 }
 
 .sideLinkContainer:hover a {
@@ -180,16 +183,28 @@
     transform: scaleX(1);
     transition: transform 0.5s;
 }
-
-/*Responsive Design*/
-@media (max-width:1200px) {
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    bottom: 0;
+}
+.imgContainer img{
+    width: 100%;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
     .container {
         margin-left: 75px;
         margin-right: 75px;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .linkContainer {
         display: none;
     }
@@ -198,7 +213,7 @@
     }
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
     .container a img {
         width: 300px;
     }
@@ -208,7 +223,7 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
     .container a img {
         width: 220px;
     }
@@ -221,8 +236,19 @@
     }
 }
 
-@media (max-width:400px) {
-    .menuBase{
+@media (max-width: 400px) {
+    .menuBase {
         width: 80% !important;
     }
+    
+}
+
+@media (max-width: 350px) {
+    .sideLinkContainer a {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+    .menuBase {
+        width: 90% !important;
+    }
+
 }

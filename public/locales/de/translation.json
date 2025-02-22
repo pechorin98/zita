@@ -1,5 +1,6 @@
 {
     "home": {
+        "home": "Startseite",
         "products": {
             "title": "Produkte",
             "description": "Entdecken Sie unsere langlebigen, stilvollen und UV-geschützten Außenbeleuchtungslösungen. Alle unsere Produkte werden aus originalen ABS- und PC-Materialien hergestellt. Sehen Sie sich unser breites Produktsortiment an, das für eine lange Lebensdauer entwickelt wurde, und laden Sie unseren Katalog für detaillierte Spezifikationen herunter.",
@@ -94,5 +95,16 @@
         "quick_links":"Schnelle Links"  ,
         "legal_and_social_and_cookie_policy": "Rechtliche, soziale und Cookie-Richtlinie",
         "certifications":"Zertifikate"
-    }
+    },
+    "contact": {
+        "title": "Kontaktieren Sie uns",
+        "text": "Kontaktieren Sie uns für weitere Informationen über unsere Produkte oder um einen Termin für den Besuch unserer Fabrik zu vereinbaren. Wir sind hier, um Ihnen bei Ihren Fragen zu helfen.",
+        "Full Name": "Vollständiger Name",
+        "Company Name": "Firmenname",
+        "E-Mail Address": "E-Mail-Adresse",
+        "Phone Number": "Telefonnummer",
+        "Subject": "Betreff",
+        "Message": "Nachricht",
+        "Contact Informations": "Kontaktinformationen"
+      }
 }

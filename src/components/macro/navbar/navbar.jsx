@@ -28,6 +28,7 @@ function Navbar() {
                         />
                     </a>
                     <div className={`${styles.linkContainer} ${isScrolled ? styles.navLinksHidden : ''}`}>
+                        <a href={`/${lng}/`} className='navlink'>{t('home.home')}</a>
                         <a href={`/${lng}/Product`} className='navlink'>{t('home.products.title')}</a>
                         <a href={`/${lng}/About`} className='navlink'>{t('home.about_us.title')}</a>
                         <a href={`/${lng}/Contact`} className='navlink'>{t('home.contact.title')}</a>
@@ -42,22 +43,21 @@ function Navbar() {
                                 alt="Zita Lighting Logo"
                                 style={{ width: "250px", marginTop: "30px", marginLeft: "20px" }}
                             />
-                            <div className={styles.sideLinkContainer}>
-                                <div style={{ width: "100%", borderBottom: "1px solid #222", paddingBottom: "5px" }}>
+                            <div className={styles.sideLinkContainer} style={{"marginTop":"40px"}}>
+                                <div style={{ width: "100%"}}>
                                     <a href={`/${lng}/Product`} className='navlink'>Products</a>
                                 </div>
-                                <div style={{ width: "100%", borderBottom: "1px solid #222", paddingBottom: "5px" }}>
+                                <div style={{ width: "100%"}}>
                                     <a href={`/${lng}/About`} className='navlink'>About Us</a>
                                 </div>
-                                <div style={{ width: "100%", borderBottom: "1px solid #222", paddingBottom: "5px" }}>
+                                <div style={{ width: "100%" }}>
                                     <a href={`/${lng}/Contact`} className='navlink'>Contact</a>
                                 </div>
                             </div>
-                            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
+                            <div className={styles.imgContainer}>
                                 <img
-                                    src="/envImg/catalog.jpg"
+                                    src="/envImg/betterCatalog.png"
                                     alt="Zita aydınlatma ürünleri kataloğu"
-                                    style={{ width: "95%", borderRadius: "24px" }}
                                 />
                             </div>
                         </div>

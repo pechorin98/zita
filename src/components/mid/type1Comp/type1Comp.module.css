@@ -17,9 +17,12 @@
 .containerLeftTextAbout{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     column-gap: 30px;
+    padding-left: 10%;
+    padding-right: 10.5%;
+
 }
 .containerRightText{
     display: flex;
@@ -63,7 +66,7 @@
         margin-top: 0px;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 80% !important;
         margin: auto;
     }
     .containerRightText{
@@ -85,7 +88,7 @@
         margin-top: 0px;
         justify-content: center;
         align-items: center;
-        width: 95%;
+        width: 95% !important;
         margin: auto;
     }
 }

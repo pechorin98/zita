@@ -1,5 +1,6 @@
 {
     "home": {
+        "home": "Home",
         "products": {
             "title": "Products",
             "description": "Discover our durable, stylish, and UV-protected outdoor lighting solutions. All our goods are manufactured with original ABS and PC materials. Check out our wide product range designed for long-lasting performance and download our catalogue for detailed specifications.",
@@ -95,5 +96,16 @@
         "quick_links":"Quick Links",
         "legal_and_social_and_cookie_policy": "Legal, Social, and Cookie Policy",
         "certifications":"Certifications"
-    }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "text": "Contact us for more information about our products or to arrange an appointment to visit our factory. We’re here to assist with any inquiries you may have.",
+        "Full Name": "Full Name",
+        "Company Name": "Company Name",
+        "E-Mail Address": "E-Mail Address",
+        "Phone Number": "Phone Number",
+        "Subject": "Subject",
+        "Message": "Message",
+        "Contact Informations": "Contact Informations"
+      }
 }

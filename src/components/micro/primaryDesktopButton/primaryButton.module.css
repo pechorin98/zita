@@ -3,7 +3,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    width: 200px;
+    width: 200px !important;
     color: #E6E6E6;
     text-decoration: none;
     font-family: "Roboto", "sans-serif";

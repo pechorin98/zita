@@ -1,5 +1,6 @@
 {
     "home": {
+        "home": "Ana Sayfa",
         "products": {
             "title": "Ürünler",
             "description": "Dayanıklı, şık ve UV korumalı dış mekan aydınlatma çözümlerimizi keşfedin. Tüm ürünlerimiz orijinal ABS ve PC malzemelerden üretilmiştir. Uzun ömürlü performans için tasarlanmış geniş ürün yelpazemizi inceleyin ve ayrıntılı teknik özellikler için kataloğumuzu indirin.",
@@ -95,5 +96,16 @@
         "quick_links":"hızlı bağlantılar",
         "legal_and_social_and_cookie_policy": "yasal ve sosyali ve çerez politikası",
         "certifications":"sertifikalar"
-    }
+    },
+    "contact": {
+        "title": "Bize Ulaşın",
+        "text": "Ürünlerimiz hakkında daha fazla bilgi almak veya fabrikamızı ziyaret etmek için randevu ayarlamak için bizimle iletişime geçin. Her türlü sorunuz için buradayız.",
+        "Full Name": "Ad Soyad",
+        "Company Name": "Şirket Adı",
+        "E-Mail Address": "E-Posta Adresi",
+        "Phone Number": "Telefon Numarası",
+        "Subject": "Konu",
+        "Message": "Mesaj",
+        "Contact Informations": "İletişim Bilgileri"
+      }
 }

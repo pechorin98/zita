@@ -37,7 +37,7 @@ function About() {
                 <Type1CompWithAnimation title={t('about_us.who_we_are.title')}
                     text={t('about_us.who_we_are.description')} noButton
                     src="/pages/about/facAbout.webp" size={windowsWith} version="containerLeftTextAbout"
-                    imgStyle={{ "width": "350px", "borderRadius": "12px" }} />
+                    imgStyle={{ "width": "400px", "borderRadius": "12px" }} styleContent={{ "width": "60%" }} />
             </section>
             {/*Mission & Vision component*/}
             <section className={styles.servus}>
@@ -46,18 +46,13 @@ function About() {
                     size={windowsWith} src="/pages/about/aboutVideo.mp4" Component={Type6Comp} />
             </section>
             {/* Our Commitment to quality*/}
-            <section className={styles.servus} style={{"backgroundColor":"#f3f4f6","paddingTop":"50px","paddingBottom":"50px"}}>
+            <section className={styles.servus} style={{ "backgroundColor": "#f3f4f6", "paddingTop": "50px", "paddingBottom": "50px" }}>
                 <Type3CompWithAnimation Component={Type5Comp} title={t('about_us.commitment.title')}
                     introText={t('about_us.commitment.statement')} size={windowsWith} whatVersion="titleNormal"
                     subTitle1={t('about_us.commitment.features1')} subTitle2={t('about_us.commitment.features2')}
                     subTitle3={t('about_us.commitment.features3')} subText1={t('about_us.commitment.subFeature1')}
                     subText2={t('about_us.commitment.subFeature2')} subText3={t('about_us.commitment.subFeature3')}
                     src="/pages/about/commitSrc.jpg" imgStyle={{ "borderRadius": "12px" }} />
-            </section>
-            {/*Sertifications Component*/}
-            <section className={styles.servus}>
-                <Type3CompWithAnimation Component={Type3Comp} title={t('about_us.certifications.title')} size={windowsWith} version="containerLeftText"
-                    text={t('about_us.certifications.des1')} text2={t('about_us.certifications.des2')} src="/pages/about/belgeler.webp" />
             </section>
             {/*What we offer component*/}
             <section className={styles.servus} >
@@ -73,7 +68,11 @@ function About() {
                     version="wrapper" isButton={false} contextContainerVersion="contextContainer" imgContainerVersion="imgContainerExport"
                     text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} />
             </section>
-
+            {/*Sertifications Component*/}
+            <section className={styles.servus}>
+                <Type3CompWithAnimation Component={Type3Comp} title={t('about_us.certifications.title')} size={windowsWith} version="containerLeftText"
+                    text={t('about_us.certifications.des1')} text2={t('about_us.certifications.des2')} src="/pages/about/belgeler.webp" />
+            </section>
         </section>
     )
 

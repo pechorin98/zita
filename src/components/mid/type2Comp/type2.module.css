@@ -68,7 +68,8 @@
 }
 
 .imgContainerIcon img:nth-child(3){
-    width: 250px   !important;
+    width: 220px   !important;
+    object-fit: cover;
 }
 
 .imgContainer img:hover {
