@@ -21,7 +21,7 @@ function Type5Comp({ whatVersion, title, introText, subTitle1, subTitle2, subTit
                             </div>
                         </div>
                     )}
-                    {size <= 1024 && <img src={src} alt={alt} className={styles.imgStyle} style={imgStyle}  loading='lazy'/>}
+                    {size <= 1024 && <img src={src} alt="Zita Aydınlatma Görsel" className={styles.imgStyle} style={imgStyle}  loading='lazy'/>}
                     <ul className={styles.listContainer}>
                         <li>
                             <div className={styles.countContainer}>
@@ -49,7 +49,7 @@ function Type5Comp({ whatVersion, title, introText, subTitle1, subTitle2, subTit
                         </li>
                     </ul>
                 </div>
-                {size > 1024 && <img src={src} alt={alt} className={styles.imgStyle} style={imgStyle} loading='lazy' />}
+                {size > 1024 && <img src={src} alt="Zita Aydınlatma Görsel" className={styles.imgStyle} style={imgStyle} loading='lazy' />}
             </div>
         </section>
     );

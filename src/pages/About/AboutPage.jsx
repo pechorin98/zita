@@ -34,7 +34,7 @@ function About() {
             {/* Who We are component*/}
             <section className={styles.servus}>
                 <Type1CompWithAnimation title={t('about_us.who_we_are.title')}
-                    text={t('about_us.who_we_are.description')} noButton
+                    text={t('about_us.who_we_are.description')} noButton alt="Zita Aydınlatma Görsel"
                     src="/pages/about/facAbout.webp" size={windowsWith} version="containerLeftTextAbout"
                     imgStyle={{ "width": "400px", "borderRadius": "12px" }} styleContent={{ "width": "60%" }} />
             </section>
@@ -51,7 +51,7 @@ function About() {
                     subTitle1={t('about_us.commitment.features1')} subTitle2={t('about_us.commitment.features2')}
                     subTitle3={t('about_us.commitment.features3')} subText1={t('about_us.commitment.subFeature1')}
                     subText2={t('about_us.commitment.subFeature2')} subText3={t('about_us.commitment.subFeature3')}
-                    src="/pages/about/commitSrc.jpg" imgStyle={{ "borderRadius": "12px" }} />
+                    src="/pages/about/commitSrc.jpg" imgStyle={{ "borderRadius": "12px" }}  alt="Zita Aydınlatma Görsel"/>
             </section>
             {/*What we offer component*/}
             <section className={styles.servus} >
@@ -59,18 +59,18 @@ function About() {
                     introText={t('about_us.offerings.statement')} subTitle1={t('about_us.offerings.features1')}
                     subTitle2={t('about_us.offerings.features2')} subTitle3={t('about_us.offerings.features3')}
                     subText1={t('about_us.offerings.subFeature1')} subText2={t('about_us.offerings.subFeature2')}
-                    subText3={t('about_us.offerings.subFeature3')} whatVersion="titleUp" src="/pages/about/ultra.webp" />
+                    subText3={t('about_us.offerings.subFeature3')} whatVersion="titleUp" src="/pages/about/ultra.webp" alt="Zita Aydınlatma Görsel" />
             </section>
             {/*global Reach Component*/}
             <section className={styles.servus}>
                 <Type2CompImgAnimation src1="/pages/about/export.webp" src2="" src3="" size={windowsWith}
                     version="wrapper" isButton={false} contextContainerVersion="contextContainer" imgContainerVersion="imgContainerExport"
-                    text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} />
+                    text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} alt="Zita Aydınlatma Görsel"/>
             </section>
             {/*Sertifications Component*/}
             <section className={styles.servus}>
                 <Type3CompWithAnimation Component={Type3Comp} title={t('about_us.certifications.title')} size={windowsWith} version="containerLeftText"
-                    text={t('about_us.certifications.des1')} text2={t('about_us.certifications.des2')} src="/pages/about/belgeler.webp" />
+                    text={t('about_us.certifications.des1')} text2={t('about_us.certifications.des2')} src="/pages/about/belgeler.webp" alt="Zita Aydınlatma Görsel"/>
             </section>
         </section>
     )
