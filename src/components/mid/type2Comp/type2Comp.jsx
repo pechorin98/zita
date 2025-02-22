@@ -17,9 +17,9 @@ function Type2Comp({ src1, src2, src3, text, title, isButton, buttonText, button
                     <p className='paraText' style={{ "marginBottom": "32px" }}>{text}</p>
                 </div>
                 <div className={styles[imgContainerVersion]}>
-                    <img src={src1} onClick={() => handleNavigate(route1)} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle1} />
-                    {src2 !== "" && <img onClick={() => handleNavigate(route2)} src={src2} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle2} />}
-                    {src3 !== "" && <img onClick={() => handleNavigate(route3)} src={src3} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle3} />}
+                    <img src={src1} loading="lazy" onClick={() => handleNavigate(route1)} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle1} />
+                    {src2 !== "" && <img loading="lazy" onClick={() => handleNavigate(route2)} src={src2} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle2} />}
+                    {src3 !== "" && <img loading="lazy" onClick={() => handleNavigate(route3)} src={src3} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle3} />}
                 </div>
                 <div style={{ "width": "100%", "display": "flex", "justifyContent": "center", "alignItems": "center", "marginTop": "48px" }}>
                     {isButton && <PrimaryButton text={buttonText} navRoute={buttonRoute} />}

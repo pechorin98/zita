@@ -18,7 +18,7 @@ function Type6Comp({ size, title1, title2, text1, text2, src }) {
                             <p className="paraText">{text2}</p>
                         </div>
                     </div>
-                    <video autoPlay muted playsInline loop className={styles.videoContainer}>
+                    <video autoPlay muted playsInline loop className={styles.videoContainer} preload="auto">
                         <source src={src}  type="video/mp4" />
                     </video>
                 </section>
@@ -28,7 +28,7 @@ function Type6Comp({ size, title1, title2, text1, text2, src }) {
                         <h1 className="titleText" >{title1}</h1>
                         <p className="paraText">{text1}</p>
                     </div>
-                    <video autoPlay muted playsInline loop className={styles.videoContainer}>
+                    <video autoPlay muted playsInline loop className={styles.videoContainer} preload="auto">
                         <source src={src}  type="video/mp4"/>
                     </video>
                     <div className={styles.contentBox}>

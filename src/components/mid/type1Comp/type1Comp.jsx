@@ -9,10 +9,10 @@ function Type1Comp({ version, buttonText, title, text, src, alt, buttonUrl, imgS
     return (
         <section className={styles.wrapper} style={style}>
             <section className={styles[version]}>
-                {size > 900 && (src !== "" ? <img src={src} alt={alt} className={styles.imgStyle} style={imgStyle} /> : <MyMap />)}
+                {size > 900 && (src !== "" ? <img src={src} alt={alt} className={styles.imgStyle} style={imgStyle} loading='lazy' /> : <MyMap />)}
                 <div className={styles.contextCol} style={styleContent}>
                     <h1 className='titleText' style={{ "marginBottom": "24px" }}>{title}</h1>
-                    {size < 900 && (src !== "" ? <img src={src} alt={alt} className={styles.imgStyle} style={imgStyle} /> : <MyMap />)}
+                    {size < 900 && (src !== "" ? <img src={src} alt={alt} className={styles.imgStyle} style={imgStyle} loading='lazy'/> : <MyMap />)}
                     {/*Mobil için olan layout düzenlemesi p elementi için global cssdedir*/}
                     <p className='paraText' style={{ "marginBottom": "32px" }}>{text}</p>
                     {!noButton && <PrimaryButton text={buttonText} navRoute={buttonUrl} />}

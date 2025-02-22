@@ -37,7 +37,7 @@ function Home() {
         <section>
             {/*Banner*/}
             <section style={{ "width": "100%", "display": "flex", "justifyContent": "center", "alignItems": "center", "backgroundColor": "black" }}>
-                <video autoPlay muted playsInline className={styles.bannerVideo}>
+                <video autoPlay muted playsInline className={styles.bannerVideo} preload='auto'>
                     <source src={videoSrc} type='video/mp4' />
                 </video>
             </section>
