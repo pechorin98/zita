@@ -60,7 +60,7 @@ function Home() {
                 src="/envImg/logo.png" imgStyle={{"marginTop":"122px","marginRight":"50px"}} size={windowsWith} />
             </section>
             {/*Certifications Component*/}
-            <section>
+            <section style={{"marginTop":"100px"}}>
                 <Type2CompWithAnimation title={t('home.certifications.title')}
                 text={t('home.certifications.description')} buttonRoute={`/${lng}/Certifications`}
                 src2="/envImg/ptcser.webp" src3="/envImg/emcser.webp" src1="/envImg/RoHSser.png" isButton 
@@ -74,6 +74,5 @@ function Home() {
             </section>
         </section>
     )
-
 };
 export default Home;

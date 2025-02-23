@@ -31,7 +31,7 @@ function Product() {
     }, [windowsWith]);
 
     return (
-        <section>
+        <section style={{ "overflowX": "hidden" }}>
             {/*katalog Componentı*/}
             <section>
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
@@ -46,7 +46,7 @@ function Product() {
                     src="/pages/products/uvImg.webp" size={windowsWith} version="containerLeftText" Component={Type3Comp} />
             </section>
             {/*ABC and PC material*/}
-            <section style={{"backgroundColor":"#f3f4f6","paddingBottom":"10px"}}>
+            <section style={{ "backgroundColor": "#f3f4f6", "paddingBottom": "20px" }}>
                 <Type3CompWithAnimation title={t('products.materials.title')}
                     text={t('products.materials.features1')} text2={t('products.materials.features2')}
                     text3={t('products.materials.features3')} Component={Type4Comp} version="containerLeftText" src="/pages/products/absIcon.webp"

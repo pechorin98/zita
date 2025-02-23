@@ -234,13 +234,30 @@
     .menuBase {
         width: 70%;
     }
+    .sideLinkContainer a {
+        opacity: 1 !important;
+        filter: none !important;
+    }
+    .sideLinkContainer:hover a {
+        opacity: 1 !important;
+        filter: none !important;
+    }
 }
 
 @media (max-width: 400px) {
     .menuBase {
         width: 80% !important;
     }
-    
+    .container a img {
+        width: 220px;
+    }
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .menuBase {
+        width: 70%;
+    }
 }
 
 @media (max-width: 350px) {

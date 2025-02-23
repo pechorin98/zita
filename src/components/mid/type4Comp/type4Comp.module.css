@@ -92,6 +92,11 @@
         margin: auto;
     }
     .imgStyle{
-        width: 350px;
+        width: 350px !important;
+    }
+}
+@media (max-width:500px) {
+    .wrapper{
+        padding-top: 30px !important;
     }
 }

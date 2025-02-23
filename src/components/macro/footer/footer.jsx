@@ -22,7 +22,7 @@ const Footer = () => {
     }), [t]);
 
     return (
-        <section style={{ marginTop: "180px" }} className={styles.wrapper}>
+        <section className={styles.wrapper}>
             <section className={styles.container}>
                 <div>
                     <MyMap />

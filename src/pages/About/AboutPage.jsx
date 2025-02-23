@@ -30,7 +30,7 @@ function About() {
     }, [windowsWith]);
 
     return (
-        <section>
+        <section style={{"overflowX":"hidden"}}>
             {/* Who We are component*/}
             <section className={styles.servus}>
                 <Type1CompWithAnimation title={t('about_us.who_we_are.title')}

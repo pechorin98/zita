@@ -47,7 +47,7 @@ const Navbar = () => {
                         <a href={navLinks.aboutUs} className='navlink'>{translationValues.aboutUs}</a>
                         <a href={navLinks.contact} className='navlink'>{translationValues.contact}</a>
                     </div>
-                    <div className={styles.mobilContainer}>
+                    <div className={styles.mobilContainer} style={{"marginBottom":"10px"}}>
                         <BurgerMenuIcon isOpen={isMenuOpen} onClick={toggleMenu} />
                     </div>
                     <div className={`${styles.menuBase} ${isMenuOpen ? styles.menuOpen : styles.menuClosed}`}>

@@ -1,6 +1,5 @@
 .wrapper{
     width: 80%;
-    margin-top: 150px;
     padding-right: 10%;
     padding-left: 10%;
 }
@@ -91,7 +90,13 @@
     .imgContainerExport img{
         width: 100%;
     }
-}@media (max-width:400px){
+}
+@media (max-width:500px) {
+    .wrapperheader{
+        margin-top: 30px;
+    }
+}
+@media (max-width:400px){
     .imgContainer img {
         width: 300px;
     }
