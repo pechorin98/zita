@@ -7,6 +7,7 @@ import {
   useParams,
   useLocation
 } from 'react-router-dom';
+import ReactGA from "react-ga4"; // Google Analytics için import
 import { AnimatePresence, motion } from 'framer-motion';
 import i18n from './i18n';
 import Home from './pages/home/HomePage';
@@ -21,6 +22,7 @@ import Rohs from './pages/Rohs/Rohs';
 import Emc from './pages/emc/emc';
 import Ptc from './pages/Ptc/Ptc';
 import Iso from './pages/Iso9001/Iso9001';
+import GA4AnalyticsTracker from './GA4AnalyticsTracker';
 
 // Updated PageWrapper without absolute positioning
 const PageWrapper = ({ children }) => {
@@ -53,6 +55,7 @@ const PageWrapper = ({ children }) => {
 function App() {
   return (
     <Router>
+      <GA4AnalyticsTracker />
       <Routes>
         {/* If the URL does not include a language parameter, redirect based on i18n's current language */}
         <Route path="/:lng/*" element={<LanguageRoutes />} />
@@ -159,6 +162,17 @@ function LanguageRoutes() {
       <Footer />
     </div>
   );
+}
+// AnalyticsWrapper bileşeni
+function AnalyticsWrapper({ children }) {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Sayfa görüntüleme (pageview) izleme
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
+  return children;
 }
 
 export default App;
