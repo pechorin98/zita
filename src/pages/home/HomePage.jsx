@@ -26,8 +26,6 @@ function Home() {
 
         updateVideoSrc();
         window.addEventListener('resize', updateVideoSrc);
-        console.log("shot fired")
-        console.log(windowsWith)
         return () => {
             window.removeEventListener('resize', updateVideoSrc);
         };
