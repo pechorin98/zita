@@ -1,15 +1,17 @@
-.wrapper{
+.wrapper {
     width: 80%;
     padding-right: 10%;
     padding-left: 10%;
 }
-.wrapperheader{
+
+.wrapperheader {
     width: 80%;
     margin-top: 80px;
     padding-right: 10%;
     padding-left: 10%;
 }
-.wrapperSigle{
+
+.wrapperSigle {
     width: 80%;
     margin-top: 150px;
     padding-right: 10%;
@@ -18,7 +20,8 @@
     justify-content: center;
     align-items: center;
 }
-.contextContainer{
+
+.contextContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,21 +29,23 @@
     row-gap: 20px;
     margin-bottom: 32px;
 }
-.imgContainer{
+
+.imgContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.imgContainerIcon{
+.imgContainerIcon {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 100px;
+    row-gap: 30px;
 }
-.imgContainerExport{
+
+.imgContainerExport {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,55 +53,91 @@
     column-gap: 100px;
 }
 
-.imgContainerExport img{
+.imgContainerExport img {
     width: 70%;
 }
 
 .imgContainer img {
     width: 30%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth scaling and box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for smooth scaling and box shadow */
 }
+
 .imgContainerIcon img {
     width: 25%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth scaling and box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Add transition for smooth scaling and box shadow */
 }
 
-.imgContainerIcon img:nth-child(1)
- {
+.imgContainerIcon img:nth-child(1) {
     width: 200px !important;
+    object-fit: cover;
+    margin-right: 5%;
 }
 
-.imgContainerIcon img:nth-child(3){
-    width: 220px   !important;
+.imgContainerIcon img:nth-child(2) {
+    width: 350px !important;
+}
+
+.imgContainerIcon img:nth-child(3) {
+    width: 220px !important;
     object-fit: cover;
+    margin-left: 2%;
 }
 
 .imgContainer img:hover {
-    transform: scale(1) !important; /* Use transform property for scaling */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+    transform: scale(1) !important;
+    /* Use transform property for scaling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add box shadow on hover */
     cursor: pointer;
 }
+
 @media (max-width:768px) {
     .imgContainer img {
         width: 375px;
     }
-    .wrapper{
+
+    .wrapper {
         padding-right: 10%;
         padding-left: 10%;
     }
-    .imgContainer{
+
+    .imgContainer {
         justify-content: center;
     }
-    .imgContainerExport img{
+
+    .imgContainerExport img {
         width: 100%;
     }
+
+    .imgContainerIcon img:nth-child(1) {
+        width: 180px !important;
+        object-fit: cover;
+        margin-right: 5%;
+    }
+
+    .imgContainerIcon img:nth-child(2) {
+        width: 200px !important;
+    }
+
+    .imgContainerIcon img:nth-child(3) {
+        width: 270px !important;
+        object-fit: cover;
+        margin-left: 2%;
+    }
+    .contextContainer{
+        row-gap: 0px;
+    }
 }
+
 @media (max-width:500px) {
-    .wrapperheader{
+    .wrapperheader {
         margin-top: 30px;
     }
 }
-@media (max-width:400px){
+
+@media (max-width:400px) {
     .imgContainer img {
         width: 300px;
     }

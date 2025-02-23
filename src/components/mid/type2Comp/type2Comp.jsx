@@ -8,12 +8,12 @@ function Type2Comp({ src1, src2, src3, text, title, isButton, buttonText, button
     const handleNavigate = (route) => {
         navigate(route)
     };
-
+    
     return (
         <section className={styles[version]}>
             <section className={styles.container}>
                 <div className={styles[contextContainerVersion]}>
-                    <h1 className='titleText' style={{ "marginBottom": "24px" }}>{title}</h1>
+                    <h1 className='titleText' style={{ "marginBottom": "24px"}}>{title}</h1>
                     <p className='paraText' style={{ "marginBottom": "32px" }}>{text}</p>
                 </div>
                 <div className={styles[imgContainerVersion]}>

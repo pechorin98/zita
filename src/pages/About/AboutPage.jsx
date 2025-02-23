@@ -34,7 +34,7 @@ function About() {
             {/* Who We are component*/}
             <section className={styles.servus}>
                 <Type1CompWithAnimation title={t('about_us.who_we_are.title')}
-                    text={t('about_us.who_we_are.description')} noButton 
+                    text={t('about_us.who_we_are.description')} noButton  style={{"marginTop":"30px"}}
                     src="/pages/about/facAbout.webp" size={windowsWith} version="containerLeftTextAbout"
                     imgStyle={{ "width": "400px", "borderRadius": "12px" }} styleContent={{ "width": "60%" }} />
             </section>

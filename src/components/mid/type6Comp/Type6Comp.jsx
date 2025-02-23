@@ -32,8 +32,8 @@ function Type6Comp({ size, title1, title2, text1, text2, src }) {
                         <source src={src}  type="video/mp4"/>
                     </video>
                     <div className={styles.contentBox}>
-                        <h1 className="titleText">{title1}</h1>
-                        <p className="paraText">{text1}</p>
+                        <h1 className="titleText">{title2}</h1>
+                        <p className="paraText">{text2}</p>
                     </div>
                 </section>
             )}

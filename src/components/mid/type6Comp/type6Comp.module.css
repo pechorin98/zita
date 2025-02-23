@@ -25,6 +25,8 @@
     .container{
         flex-direction: column;
         row-gap: 32px;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media (max-width: 600px) {
@@ -35,6 +37,10 @@
     }
     .contentContainer{
         width: 100%;
+        text-align: center;
+    }
+    .contentBox{
+        text-align: center;
     }
 }
 @media (max-width:500px) {

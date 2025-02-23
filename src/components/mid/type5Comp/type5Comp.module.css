@@ -89,6 +89,18 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+    .listContainer{
+        margin: 0;
+        padding-right: 5%;
+        width: 95%;
+    }
+    .countContainer{
+        margin-left: 5%;
+    }
+    .countContainer div{
+        margin-left: 0 !important;
+        width: 80%;
+    }
 }
 @media (max-width:500px) {
     .imgStyle{

@@ -1,3 +1,8 @@
 .servus{
     margin-bottom: 200px;
 }
+@media (max-width:500px) {
+    .servus{
+        margin-bottom: 70px;
+    }
+}
