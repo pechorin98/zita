@@ -1,0 +1,20 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Disallow:
+
+# Disallow access to certain directories
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /private/
+Disallow: /temp/
+
+# Disallow access to specific files
+
+# Allow access to specific files in disallowed directories
+Allow: /public/*.html
+Allow: /public/*.css
+Allow: /public/*.js
+
+# Sitemap location
+Sitemap: http://localhost:5173/sitemap.xml

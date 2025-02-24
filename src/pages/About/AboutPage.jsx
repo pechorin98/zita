@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './about.module.css';
+import { Helmet } from 'react-helmet';
 import Type1CompWithAnimation from '../../components/mid/type2Comp/Type1CompWithAnimation';
 import Type2CompImgAnimation from '../../components/mid/type2Comp/Type2CompWithAnimation ';
 import Type3CompWithAnimation from '../../components/mid/type3Comp/Type3CompWithAnimation';
@@ -22,28 +23,26 @@ function About() {
 
         updateVideoSrc();
         window.addEventListener('resize', updateVideoSrc);
-        console.log("shot fired")
-        console.log(windowsWith)
         return () => {
             window.removeEventListener('resize', updateVideoSrc);
         };
     }, [windowsWith]);
 
     return (
-        <section style={{"overflowX":"hidden"}}>
+        <section style={{ "overflowX": "hidden" }}>
+            <Helmet>
+                <title>Zita Aydınlatma - About Us</title>
+                <meta name="description" content="Learn more about Zita Aydınlatma, our commitment to quality, our mission and vision, and our global reach. Discover why we are a leading provider of high-quality lighting solutions." />
+                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, Quality, Mission, Vision, Global Reach, Certifications" />
+            </Helmet>
             {/* Who We are component*/}
             <section className={styles.servus}>
                 <Type1CompWithAnimation title={t('about_us.who_we_are.title')}
-                    text={t('about_us.who_we_are.description')} noButton  style={{"marginTop":"30px"}}
+                    text={t('about_us.who_we_are.description')} noButton style={{ "marginTop": "30px" }}
                     src="/pages/about/facAbout.webp" size={windowsWith} version="containerLeftTextAbout"
                     imgStyle={{ "width": "400px", "borderRadius": "12px" }} styleContent={{ "width": "60%" }} />
             </section>
-            {/*Mission & Vision component*/}
-            <section className={styles.servus}>
-                <Type3CompWithAnimation title1={t('mission.title')} title2={t('vision.title')}
-                    text1={t('mission.description')} text2={t('vision.description')}
-                    size={windowsWith} src="/pages/about/aboutVideo.mp4" Component={Type6Comp} />
-            </section>
+
             {/* Our Commitment to quality*/}
             <section className={styles.servus} style={{ "backgroundColor": "#f3f4f6", "paddingTop": "50px", "paddingBottom": "50px" }}>
                 <Type3CompWithAnimation Component={Type5Comp} title={t('about_us.commitment.title')}
@@ -51,7 +50,13 @@ function About() {
                     subTitle1={t('about_us.commitment.features1')} subTitle2={t('about_us.commitment.features2')}
                     subTitle3={t('about_us.commitment.features3')} subText1={t('about_us.commitment.subFeature1')}
                     subText2={t('about_us.commitment.subFeature2')} subText3={t('about_us.commitment.subFeature3')}
-                    src="/pages/about/commitSrc.jpg" imgStyle={{ "borderRadius": "12px" }}  alt="Zita Aydınlatma Görsel"/>
+                    src="/pages/about/commitSrc.jpg" imgStyle={{ "borderRadius": "12px" }} alt="Zita Aydınlatma Görsel" />
+            </section>
+            {/*Mission & Vision component*/}
+            <section className={styles.servus}>
+                <Type3CompWithAnimation title1={t('mission.title')} title2={t('vision.title')}
+                    text1={t('mission.description')} text2={t('vision.description')}
+                    size={windowsWith} src="/pages/about/aboutVideo.mp4" Component={Type6Comp} />
             </section>
             {/*What we offer component*/}
             <section className={styles.servus} >
@@ -65,12 +70,12 @@ function About() {
             <section className={styles.servus}>
                 <Type2CompImgAnimation src1="/pages/about/export.webp" src2="" src3="" size={windowsWith}
                     version="wrapper" isButton={false} contextContainerVersion="contextContainer" imgContainerVersion="imgContainerExport"
-                    text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} alt="Zita Aydınlatma Görsel"/>
+                    text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} alt="Zita Aydınlatma Görsel" />
             </section>
             {/*Sertifications Component*/}
             <section className={styles.servus}>
                 <Type3CompWithAnimation Component={Type3Comp} title={t('about_us.certifications.title')} size={windowsWith} version="containerLeftText"
-                    text={t('about_us.certifications.des1')} text2={t('about_us.certifications.des2')} src="/pages/about/belgeler.webp" alt="Zita Aydınlatma Görsel"/>
+                    text={t('about_us.certifications.des1')} text2={t('about_us.certifications.des2')} src="/pages/about/belgeler.webp" alt="Zita Aydınlatma Görsel" />
             </section>
         </section>
     )

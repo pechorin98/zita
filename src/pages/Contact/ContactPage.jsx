@@ -6,6 +6,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react";
 import emailjs from 'emailjs-com';
+import { Helmet } from 'react-helmet';
 
 function Contact() {
     const navigate = useNavigate();
@@ -24,19 +25,24 @@ function Contact() {
             form.current,
             '83wmmCiOBRr8vH8-4' // Your Public Key
         )
-        .then(() => {
-            setMessage('Email sent successfully! ✅');
-            form.current.reset();
-            setTimeout(() => setMessage(''), 5000); // Clear message after 5 seconds
-        })
-        .catch((error) => {
-            setMessage('Failed to send email. ❌');
-            console.error('EmailJS Error:', error);
-        });
+            .then(() => {
+                setMessage('Email sent successfully! ✅');
+                form.current.reset();
+                setTimeout(() => setMessage(''), 5000); // Clear message after 5 seconds
+            })
+            .catch((error) => {
+                setMessage('Failed to send email. ❌');
+                console.error('EmailJS Error:', error);
+            });
     };
 
     return (
         <section className={styles.wrapper}>
+            <Helmet>
+                <title>Zita Aydınlatma - Contact Us</title>
+                <meta name="description" content="Get in touch with Zita Aydınlatma. Contact us for any inquiries, support, or feedback. We are here to help you with your lighting needs." />
+                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, Contact, Support, Inquiries" />
+            </Helmet>
             <section className={styles.formContainer}>
                 <div className={styles.formTitleContainer}>
                     <h1 className="titleText" style={{ marginBottom: "16px" }}>{t("contact.title")}</h1>

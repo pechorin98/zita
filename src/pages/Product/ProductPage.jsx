@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import Type3Comp from '../../components/mid/type3Comp/Type3Comp';
 import Type4Comp from '../../components/mid/type4Comp/Type4Comp';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function Product() {
 
@@ -23,8 +24,6 @@ function Product() {
 
         updateVideoSrc();
         window.addEventListener('resize', updateVideoSrc);
-        console.log("shot fired")
-        console.log(windowsWith)
         return () => {
             window.removeEventListener('resize', updateVideoSrc);
         };
@@ -32,6 +31,11 @@ function Product() {
 
     return (
         <section style={{ "overflowX": "hidden" }}>
+            <Helmet>
+                <title>Zita Aydınlatma - Products</title>
+                <meta name="description" content="Explore our wide range of high-quality lighting products at Zita Aydınlatma. From UV protection to advanced materials, find the perfect lighting solution for your needs." />
+                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, UV Protection, Materials, Sockets, Certifications" />
+            </Helmet>
             {/*katalog Componentı*/}
             <section>
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
