@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .containerLeftText,
 .containerLeftTextAbout {
     display: flex;
@@ -15,12 +16,14 @@
     align-items: center;
     column-gap: 30px;
 }
+
 .containerLeftTextAbout {
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 10%;
     padding-right: 10.5%;
 }
+
 .containerRightText {
     display: flex;
     flex-direction: row;
@@ -28,6 +31,7 @@
     align-items: flex-start;
     column-gap: 30px;
 }
+
 .contextCol {
     width: 40%;
     display: flex;
@@ -36,15 +40,25 @@
     align-items: flex-start;
     margin-top: 70px;
 }
+
 .imgStyle {
     width: 400px;
 }
+
+.map{
+    width: 500px;
+    height: 350px;
+    border: none;
+    border-radius: 12px;
+}
+
 @media (max-width:1024px) {
-    .containerLeftTextAbout{
+    .containerLeftTextAbout {
         padding-left: 0;
         padding-right: 0;
     }
 }
+
 @media (max-width: 1000px) {
     .imgStyle {
         width: 375px !important;
@@ -52,16 +66,19 @@
 }
 
 @media (max-width: 900px) {
+
     .containerLeftText,
     .containerLeftTextAbout {
         flex-direction: column-reverse;
     }
+
     .wrapper {
         margin-top: 100px;
         width: 90%;
         padding-left: 5%;
         padding-right: 0;
     }
+
     .contextCol {
         margin-top: 0px;
         justify-content: center;
@@ -69,9 +86,11 @@
         width: 80% !important;
         margin: auto;
     }
+
     .containerRightText {
         flex-direction: column-reverse;
     }
+
     .containerRightText img {
         margin-top: 24px !important;
         margin-bottom: 16px;
@@ -83,5 +102,9 @@
 @media (max-width: 600px) {
     .contextCol {
         width: 95% !important;
+    }
+    .map{
+        width: 325px;
+        height: 350px;
     }
 }

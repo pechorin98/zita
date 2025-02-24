@@ -25,7 +25,7 @@ const Footer = () => {
         <section className={styles.wrapper}>
             <section className={styles.container}>
                 <div>
-                    <MyMap />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.5857663704087!2d28.752782577068793!3d41.056186871343826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3e78ee75c0f%3A0x163a476e01cea62a!2sZita%20Aydinlatma!5e0!3m2!1sen!2str!4v1740427130669!5m2!1sen!2str" className={styles.map}></iframe>
                     <h1 className="footerSectionTitle" style={{ marginTop: "24px" }}>
                         ZİTA ELK. AYDINLATMA SAN. ve TİC.LTD.ŞTİ.
                     </h1>

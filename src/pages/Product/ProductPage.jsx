@@ -41,7 +41,7 @@ function Product() {
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
                     text={t('products.catalogue.description')} src1="/pages/products/catalog.jpg"
                     src2="/pages/products/catalogp1.jpg" src3="/pages/products/catalogp2.jpg" version="wrapperheader" imgContainerVersion="imgContainer"
-                    navigate={navigate} route1={`/${lng}/Catalog`} route2={`/${lng}/Catalog`} route3={`/${lng}/Catalog`} />
+                    navigate={navigate} route1="/pdfs/zitaKatalog.pdf" route2="/pdfs/zitaKatalog.pdf" route3="/pdfs/zitaKatalog.pdf" />
             </section>
             {/*UV Component*/}
             <section>

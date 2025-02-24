@@ -19,10 +19,10 @@ function Cert() {
                 <p className='paraText'>To view the certification file, please click on the corresponding image.</p>
             </div>
             <section className={styles.container}>
-                <a href={`/${lng}/Emc`}><img className={styles.imgContainer} src="/envImg/emcser.webp" alt="Zita aydınlatma sertifika" /></a>
-                <a href={`/${lng}/Ptc`}><img className={styles.imgContainer} src="/envImg/ptcser.webp" alt="Zita aydınlatma sertifika" /></a>
-                <a href={`/${lng}/Rohs`}><img className={styles.imgContainer} src="/envImg/RoHSser.png" alt="Zita aydınlatma sertifika" /></a>
-                <a href={`/${lng}/Iso`}><img className={styles.imgContainer} src="/envImg/certifikaxd.webp" alt="Zita aydınlatma sertifika" /></a>
+                <a href="/pdfs/emc.pdf"><img className={styles.imgContainer} src="/envImg/emcser.webp" alt="Zita aydınlatma sertifika" /></a>
+                <a href="/pdfs/ptc.pdf"><img className={styles.imgContainer} src="/envImg/ptcser.webp" alt="Zita aydınlatma sertifika" /></a>
+                <a href={"/pdfs/Rohs.pdf" }><img className={styles.imgContainer} src="/envImg/RoHSser.png" alt="Zita aydınlatma sertifika" /></a>
+                <a href="/pdfs/ISO9001.pdf"><img className={styles.imgContainer} src="/envImg/certifikaxd.webp" alt="Zita aydınlatma sertifika" /></a>
             </section>
         </section>
     )

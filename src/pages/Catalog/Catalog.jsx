@@ -26,10 +26,20 @@ function Catalog() {
                 <meta name="description" content="Browse the Zita Aydınlatma catalog to discover our wide range of high-quality lighting products. Find the perfect lighting solutions for your needs." />
                 <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, Catalog, Products" />
             </Helmet>
-            {windowsWith <= 750 && <PdfJsViewer pdfUrl="/pdfs/zitaKatalog.pdf" />}
-            {windowsWith > 750 && <PdfIframeViewer pdfUrl="/pdfs/zitaKatalog.pdf"/>}
+            <object width="100%" height="400" data="/pdfs/zitaKatalog.pdf" type="application/pdf" ></object>
         </section>
     )
-
 };
+
 export default Catalog;
+
+/*
+        <section>
+            <Helmet>
+                <title>Zita Aydınlatma - Catalog</title>
+                <meta name="description" content="Browse the Zita Aydınlatma catalog to discover our wide range of high-quality lighting products. Find the perfect lighting solutions for your needs." />
+                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, Catalog, Products" />
+            </Helmet>
+            {windowsWith <= 750 && <PdfJsViewer pdfUrl="/pdfs/zitaKatalog.pdf" />}
+            {windowsWith > 750 && <PdfIframeViewer pdfUrl="/pdfs/zitaKatalog.pdf"/>}
+        </section> */

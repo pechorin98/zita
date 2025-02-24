@@ -65,6 +65,12 @@
     color: #0d8ddb; /* Change color on active (darker shade) */
     transform: scale(1.1); /* Slightly scale down the icon on active */
 }
+.map{
+    width: 400px;
+    height: 300px;
+    border: 0px solid #f3f3f3;
+    border-radius: 8px;
+}
 @media (max-width:750px) {
     .container{
         flex-direction: column;
@@ -81,5 +87,9 @@
 @media (max-width:500px) {
     .wrapper{
         margin-top: 100px;
+    }
+    .map{
+        width: 325px;
+        height: 350px;
     }
 }
