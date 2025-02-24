@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     margin-top: 120px;
     width: 80%;
     padding-left: 10%;
@@ -7,31 +7,28 @@
     justify-content: center;
     align-items: center;
 }
-.containerLeftText{
+.containerLeftText,
+.containerLeftTextAbout {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     column-gap: 30px;
 }
-.containerLeftTextAbout{
-    display: flex;
-    flex-direction: row-reverse;
+.containerLeftTextAbout {
     justify-content: space-between;
     align-items: flex-start;
-    column-gap: 30px;
     padding-left: 10%;
     padding-right: 10.5%;
-
 }
-.containerRightText{
+.containerRightText {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     column-gap: 30px;
 }
-.contextCol{
+.contextCol {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -39,43 +36,38 @@
     align-items: flex-start;
     margin-top: 70px;
 }
-.imgStyle{
+.imgStyle {
     width: 400px;
 }
 
 @media (max-width: 1000px) {
-    .imgStyle{
-        width: 350px !important;
-    }  
+    .imgStyle {
+        width: 375px !important;
+    }
 }
 
-@media (max-width: 900px ) {
-    .containerLeftText{
+@media (max-width: 900px) {
+    .containerLeftText,
+    .containerLeftTextAbout {
         flex-direction: column-reverse;
     }
-    .containerLeftTextAbout{
-        flex-direction: column-reverse;
-    }
-    .wrapper{
+    .wrapper {
         margin-top: 100px;
         width: 90%;
         padding-left: 5%;
         padding-right: 0;
     }
-    .contextCol{
+    .contextCol {
         margin-top: 0px;
         justify-content: center;
         align-items: center;
         width: 80% !important;
         margin: auto;
     }
-    .containerRightText{
-        display: flex;
+    .containerRightText {
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
     }
-    .containerRightText img{
+    .containerRightText img {
         margin-top: 24px !important;
         margin-bottom: 16px;
         width: 300px !important;
@@ -84,12 +76,7 @@
 }
 
 @media (max-width: 600px) {
-    .contextCol{
-        margin-top: 0px;
-        justify-content: center;
-        align-items: center;
+    .contextCol {
         width: 95% !important;
-        margin: auto;
     }
-    
 }

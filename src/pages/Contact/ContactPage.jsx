@@ -27,10 +27,11 @@ function Contact() {
         .then(() => {
             setMessage('Email sent successfully! ✅');
             form.current.reset();
+            setTimeout(() => setMessage(''), 5000); // Clear message after 5 seconds
         })
         .catch((error) => {
             setMessage('Failed to send email. ❌');
-            console.error('EmailJS Error:', error.text);
+            console.error('EmailJS Error:', error);
         });
     };
 
