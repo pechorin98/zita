@@ -93,6 +93,24 @@
     cursor: pointer;
 }
 
+@media (max-width:1024px) {
+    .imgContainerIcon img:nth-child(1) {
+        width: 200px !important;
+        object-fit: cover;
+        margin-right: 5%;
+    }
+    
+    .imgContainerIcon img:nth-child(2) {
+        width: 200px !important;
+    }
+    
+    .imgContainerIcon img:nth-child(3) {
+        width: 220px !important;
+        object-fit: cover;
+        margin-left: 2%;
+    }
+}
+
 @media (max-width:768px) {
     .imgContainer img {
         width: 375px;
