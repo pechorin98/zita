@@ -3,9 +3,11 @@ import styles from './home.module.css';
 import PrimaryButton from '../../components/micro/primaryDesktopButton/PrimaryButton';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
+import Type3CompWithAnimation from '../../components/mid/type3Comp/Type3CompWithAnimation';
 import Type2CompWithAnimation from '../../components/mid/type2Comp/Type2CompWithAnimation ';
 import Type1CompWithAnimation from '../../components/mid/type2Comp/Type1CompWithAnimation';
 import { Helmet } from 'react-helmet';
+import Type7Comp from '../../components/mid/type7Comp/type7Comp';
 
 function Home() {
 
@@ -71,8 +73,13 @@ function Home() {
                     buttonText={t('home.certifications.button')} version="wrapper" imgContainerVersion="imgContainer" />
             </section>
             {/*Contact Component*/}
-            <section className={styles.contactContainer}>
+            <section className={styles.contactContainer} style={{"display":"none"}}>
                 <Type1CompWithAnimation title={t('home.contact.title')}
+                    text={t('home.contact.description')} buttonText={t('home.contact.button')} src="" version="containerLeftText"
+                    buttonUrl={`/${lng}/Contact`} size={windowsWith} />
+            </section>
+            <section>
+                <Type3CompWithAnimation Component={Type7Comp} title={t('home.contact.title')}
                     text={t('home.contact.description')} buttonText={t('home.contact.button')} src="" version="containerLeftText"
                     buttonUrl={`/${lng}/Contact`} size={windowsWith} />
             </section>
