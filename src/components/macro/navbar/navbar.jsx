@@ -59,13 +59,13 @@ const Navbar = () => {
                             />
                             <div className={styles.sideLinkContainer} style={{ marginTop: "40px" }}>
                                 <div style={{ width: "100%" }}>
-                                    <a href={navLinks.products} className='navlink'>Products</a>
+                                    <a href={navLinks.products} className='navlink'>{translationValues.products}</a>
                                 </div>
                                 <div style={{ width: "100%" }}>
-                                    <a href={navLinks.aboutUs} className='navlink'>About Us</a>
+                                    <a href={navLinks.aboutUs} className='navlink'>{translationValues.aboutUs}</a>
                                 </div>
                                 <div style={{ width: "100%" }}>
-                                    <a href={navLinks.contact} className='navlink'>Contact</a>
+                                    <a href={navLinks.contact} className='navlink'>{translationValues.contact}</a>
                                 </div>
                             </div>
                             <div className={styles.imgContainer}>
