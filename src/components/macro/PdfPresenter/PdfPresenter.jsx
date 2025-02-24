@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './pdfPresenter.module.css';
+import PdfJsViewer from '../PdfJsViewer';
 
 function PdfIframeViewer({ pdfUrl }) {
+  
   return (
     <div className={styles.container}>
       <iframe
