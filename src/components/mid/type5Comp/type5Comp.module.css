@@ -90,9 +90,10 @@
         padding-right: 5%;
     }
     .listContainer{
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 80%;
         margin: 0;
-        padding-right: 5%;
-        width: 95%;
     }
     .countContainer{
         margin-left: 5%;
@@ -100,6 +101,11 @@
     .countContainer div{
         margin-left: 0 !important;
         width: 80%;
+    }
+    .normalContext{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 @media (max-width:500px) {
