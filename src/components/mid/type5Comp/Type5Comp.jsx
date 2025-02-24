@@ -15,10 +15,8 @@ function Type5Comp({ whatVersion, title, introText, subTitle1, subTitle2, subTit
                 <div className={styles.contentContainer}>
                     {whatVersion === "titleNormal" && (
                         <div className={styles.normalContext}>
-                            <div>
-                                <h1 className='titleText'>{title}</h1>
-                                <p className='paraText'>{introText}</p>
-                            </div>
+                                <h1 className='titleText' style={{"marginBottom":"24px"}}>{title}</h1>
+                                <p className='paraText' style={{"marginBottom":"32px"}}>{introText}</p>
                         </div>
                     )}
                     {size <= 1024 && <img src={src} alt="Zita Aydınlatma Görsel" className={styles.imgStyle} style={imgStyle} loading='lazy' />}
