@@ -65,7 +65,7 @@ function Product() {
             {/*Sertifika Components*/}
             <Type2CompImgAnimation title={t('products.certifications.title')}
                 text={t('products.certifications.description')} imgContainerVersion="imgContainerIcon" contextContainerVersion="contextContainer"
-                src1="/pages/products/ceIcon.png" src2="/pages/products/rohs.png" src3="/pages/products/ısoIcon.webp" version="wrapperSigle" isButton
+                src1="/pages/products/cekucuk.webp" src2="/pages/products/rohskucuk.webp" src3="/pages/products/isokucuk.webp" version="wrapperSigle" isButton
                 buttonText={t('home.certifications.button')} buttonRoute={`/${lng}/Certifications`} />
         </section>
     );

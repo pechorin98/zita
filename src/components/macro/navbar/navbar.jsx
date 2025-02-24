@@ -1,16 +1,21 @@
-import React, { memo, useState, useMemo } from 'react';
+import React, { memo, useState, useMemo, useEffect } from 'react';
 import styles from './navbar.module.css';
 import BurgerMenuIcon from '../../micro/burgerMenu/BurgerMenuIcon';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { useParams , useLocation  } from 'react-router-dom';
+
 
 const Navbar = () => {
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const [isScrolled, setIsScrolled] = useState(true);
+    const [trimmedPat,setTrimmedPat] = useState(null);
 
     const { t } = useTranslation();
     const { lng } = useParams();
+    const location = useLocation();
+
 
     // Memoizing translation values to prevent recalculations
     const translationValues = useMemo(() => ({
@@ -27,6 +32,12 @@ const Navbar = () => {
         aboutUs: `/${lng}/About`,
         contact: `/${lng}/Contact`
     }), [lng]);
+
+
+    useEffect(() => {
+        const trimmedPath = location.pathname.substring(4);
+        setTrimmedPat(trimmedPath);
+    },[""])
 
     return (
         <>

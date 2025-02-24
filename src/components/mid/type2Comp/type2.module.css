@@ -43,6 +43,7 @@
     align-items: center;
     flex-wrap: wrap;
     row-gap: 30px;
+    column-gap: 10%;
 }
 
 .imgContainerExport {
@@ -72,17 +73,16 @@
 .imgContainerIcon img:nth-child(1) {
     width: 200px !important;
     object-fit: cover;
-    margin-right: 5%;
 }
 
 .imgContainerIcon img:nth-child(2) {
-    width: 350px !important;
+    width: 200px !important;
+    object-fit: cover;
 }
 
 .imgContainerIcon img:nth-child(3) {
-    width: 220px !important;
+    width: 200px !important;
     object-fit: cover;
-    margin-left: 2%;
 }
 
 .imgContainer img:hover {
