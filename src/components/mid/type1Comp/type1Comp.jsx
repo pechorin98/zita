@@ -4,7 +4,6 @@ import PrimaryButton from '../../micro/primaryDesktopButton/PrimaryButton';
 import MyMap from '../../../services/myMap';
 
 function Type1Comp({ version, buttonText, title, text, src, alt, buttonUrl, imgStyle, size, style, noButton, styleContent }) {
-    console.log('Window size:', size);
     return (
         <section className={styles.wrapper} style={style}>
             <section className={styles[version]}>

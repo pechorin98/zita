@@ -4,10 +4,11 @@ import {
   Route,
   Routes,
   Navigate,
+  Outlet,
   useParams,
   useLocation
 } from 'react-router-dom';
-import ReactGA from "react-ga4"; // Google Analytics için import
+import ReactGA from "react-ga4";
 import { AnimatePresence, motion } from 'framer-motion';
 import i18n from './i18n';
 import Home from './pages/home/HomePage';
@@ -23,21 +24,20 @@ import Emc from './pages/emc/emc';
 import Ptc from './pages/Ptc/Ptc';
 import Iso from './pages/Iso9001/Iso9001';
 import GA4AnalyticsTracker from './GA4AnalyticsTracker';
+import LanguageBtn from './components/micro/languageBtn/languageBtn';
 
-// Updated PageWrapper without absolute positioning
+// Animate edilecek sayfa wrapper'ı
 const PageWrapper = ({ children }) => {
   const pageVariants = {
     initial: { opacity: 0, x: 100 },
     in: { opacity: 1, x: 0 },
     out: { opacity: 0, x: -100 }
   };
-
   const pageTransition = {
     type: 'tween',
     ease: 'easeInOut',
     duration: 0.5
   };
-
   return (
     <motion.div
       initial="initial"
@@ -45,27 +45,14 @@ const PageWrapper = ({ children }) => {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      style={{ width: '100%' }}  // Removed absolute positioning
+      style={{ width: '100%' }}
     >
       {children}
     </motion.div>
   );
 };
 
-function App() {
-  return (
-    <Router>
-      <GA4AnalyticsTracker />
-      <Routes>
-        {/* If the URL does not include a language parameter, redirect based on i18n's current language */}
-        <Route path="/:lng/*" element={<LanguageRoutes />} />
-        <Route path="/" element={<Navigate to={`/${i18n.language}/`} replace />} />
-        <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />
-      </Routes>
-    </Router>
-  );
-}
-
+// Üst route altında render edilecek layout
 function LanguageRoutes() {
   const { lng } = useParams();
   const location = useLocation();
@@ -80,99 +67,45 @@ function LanguageRoutes() {
   }, [lng]);
 
   return (
-    // Flex container for full height layout: Navbar on top, growing content area, and Footer at the bottom
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
-      {/* The main content area */}
+      {/* İçerik alanı: AnimatePresence ile geçiş animasyonu */}
       <div style={{ flex: 1 }}>
         <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
-            <Route
-              path="/"
-              element={
-                <PageWrapper>
-                  <Home />
-                </PageWrapper>
-              }
-            />
-            <Route
-              path="/About"
-              element={
-                <PageWrapper>
-                  <About />
-                </PageWrapper>
-              }
-            />
-            <Route
-              path="/Contact"
-              element={
-                <PageWrapper>
-                  <Contact />
-                </PageWrapper>
-              }
-            />
-            <Route
-              path="/Product"
-              element={
-                <PageWrapper>
-                  <Product />
-                </PageWrapper>
-              }
-            />
-            <Route path='/Catalog'
-              element={
-                <PageWrapper>
-                  <Catalog />
-                </PageWrapper>
-              } />
-            <Route path='/Certifications'
-              element={
-                <PageWrapper>
-                  <Cert />
-                </PageWrapper>
-              } />
-            <Route path='/Rohs'
-              element={
-                <PageWrapper>
-                  <Rohs />
-                </PageWrapper>
-              } />
-            <Route path='/Emc'
-              element={
-                <PageWrapper>
-                  <Emc />
-                </PageWrapper>
-              } />
-            <Route path='/Ptc'
-              element={
-                <PageWrapper>
-                  <Ptc />
-                </PageWrapper>
-              } />
-            <Route path='/Iso'
-              element={
-                <PageWrapper>
-                  <Iso />
-                </PageWrapper>
-              } />
-            <Route path="*" element={<Navigate to={`/${lng}/`} replace />} />
-          </Routes>
+          <Outlet />
         </AnimatePresence>
       </div>
       <Footer />
+      <LanguageBtn />
     </div>
   );
 }
-// AnalyticsWrapper bileşeni
-function AnalyticsWrapper({ children }) {
-  const location = useLocation();
 
-  useEffect(() => {
-    // Sayfa görüntüleme (pageview) izleme
-    ReactGA.send({ hitType: "pageview", page: location.pathname });
-  }, [location]);
-
-  return children;
+function App() {
+  return (
+    <Router>
+      <GA4AnalyticsTracker />
+      <Routes>
+        {/* Eğer URL’de dil parametresi yoksa mevcut i18n dili ile yönlendir */}
+        <Route path="/" element={<Navigate to={`/${i18n.language}/`} replace />} />
+        {/* Dil parametresi ile başlayan route */}
+        <Route path="/:lng" element={<LanguageRoutes />}>
+          <Route index element={<PageWrapper><Home /></PageWrapper>} />
+          <Route path="About" element={<PageWrapper><About /></PageWrapper>} />
+          <Route path="Contact" element={<PageWrapper><Contact /></PageWrapper>} />
+          <Route path="Product" element={<PageWrapper><Product /></PageWrapper>} />
+          <Route path="Catalog" element={<PageWrapper><Catalog /></PageWrapper>} />
+          <Route path="Certifications" element={<PageWrapper><Cert /></PageWrapper>} />
+          <Route path="Rohs" element={<PageWrapper><Rohs /></PageWrapper>} />
+          <Route path="Emc" element={<PageWrapper><Emc /></PageWrapper>} />
+          <Route path="Ptc" element={<PageWrapper><Ptc /></PageWrapper>} />
+          <Route path="Iso" element={<PageWrapper><Iso /></PageWrapper>} />
+          <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />
+        </Route>
+        <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

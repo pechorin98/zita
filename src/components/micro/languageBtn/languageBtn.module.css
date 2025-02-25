@@ -1,0 +1,54 @@
+.languageContainer {
+    position: sticky;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background-color: #010101;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.languageContainer:hover {
+    height: 200px; /* Adjust the height to fit all language options */
+}
+
+.languageButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.languageList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.languageItem {
+    background-color: #010101;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.languageItem:hover {
+    background-color: #333;
+}
+@media (max-width:1024px) {
+    .languageContainer{
+        position: relative;
+        z-index: 999;
+    }
+}
