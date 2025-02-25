@@ -17,4 +17,4 @@ Allow: /public/*.css
 Allow: /public/*.js
 
 # Sitemap location
-Sitemap: http://localhost:5173/sitemap.xml
+Sitemap: https://www.zitaaydinlatma.com.tr/sitemap.xml
