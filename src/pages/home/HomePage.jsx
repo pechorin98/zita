@@ -37,9 +37,10 @@ function Home() {
     return (
         <section>
             <Helmet>
-                <title>Zita Aydınlatma - Home</title>
+                <title>Zita Aydınlatma |  Lighting for Homes & Businesses</title>
                 <meta name="description" content="Welcome to Zita Aydınlatma. Discover our high-quality lighting solutions for your home and business." />
-                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/" />
             </Helmet>
             {/*Banner*/}
             <section style={{ "width": "100%", "display": "flex", "justifyContent": "center", "alignItems": "center", "backgroundColor": "black" }}>
@@ -63,17 +64,17 @@ function Home() {
                 <Type1CompWithAnimation title={t('home.about_us.title')}
                     text={t('home.about_us.description')} version="containerRightText"
                     buttonText={t('home.about_us.button')} buttonUrl={`/${lng}/About`}
-                    src="/envImg/logo.png" imgStyle={{ "marginTop": "122px", "marginRight": "50px" }} size={windowsWith} />
+                    src="/envImg/logo.webp" imgStyle={{ "marginTop": "122px", "marginRight": "50px" }} size={windowsWith} />
             </section>
             {/*Certifications Component*/}
             <section style={{ "marginTop": "100px" }}>
                 <Type2CompWithAnimation title={t('home.certifications.title')}
                     text={t('home.certifications.description')} buttonRoute={`/${lng}/Certifications`}
-                    src2="/envImg/ptcser.webp" src3="/envImg/emcser.webp" src1="/envImg/RoHSser.png" isButton
+                    src2="/envImg/ptcser.webp" src3="/envImg/emcser.webp" src1="/envImg/RoHSser.webp" isButton
                     buttonText={t('home.certifications.button')} version="wrapper" imgContainerVersion="imgContainer" />
             </section>
             {/*Contact Component*/}
-            <section className={styles.contactContainer} style={{"display":"none"}}>
+            <section className={styles.contactContainer} style={{ "display": "none" }}>
                 <Type1CompWithAnimation title={t('home.contact.title')}
                     text={t('home.contact.description')} buttonText={t('home.contact.button')} src="" version="containerLeftText"
                     buttonUrl={`/${lng}/Contact`} size={windowsWith} />

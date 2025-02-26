@@ -45,7 +45,7 @@ const Navbar = () => {
                 <div className={`${styles.container} ${isScrolled ? styles.scrolled : ''}`}>
                     <a href={navLinks.home}>
                         <img
-                            src="/envImg/logo.png"
+                            src="/envImg/logo.webp"
                             alt="Zita Lighting Logo"
                             className={`${isScrolled ? styles.logoScrolled : ''}`}
                             style={{ objectFit: "contain" }}

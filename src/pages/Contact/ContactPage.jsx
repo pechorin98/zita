@@ -39,9 +39,10 @@ function Contact() {
     return (
         <section className={styles.wrapper}>
             <Helmet>
-                <title>Zita Aydınlatma - Contact Us</title>
-                <meta name="description" content="Get in touch with Zita Aydınlatma. Contact us for any inquiries, support, or feedback. We are here to help you with your lighting needs." />
-                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, Contact, Support, Inquiries" />
+                <title>Contact Zita Aydınlatma | Customer Support & Inquiries</title>
+                <meta name="description" content="Need help with LED lighting solutions? Contact Zita Aydınlatma for support, business inquiries, or custom lighting projects. Call, email, or visit us today!" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/contact" />
             </Helmet>
             <section className={styles.formContainer}>
                 <div className={styles.formTitleContainer}>
@@ -106,7 +107,7 @@ function Contact() {
 
                 <div className={styles.imgContainer}>
                     <img
-                        src="/pages/products/catalog.jpg"
+                        src="/pages/products/catalog.webp"
                         alt="Zita Aydınlatma Katalog"
                         className={styles.img1}
                         onClick={() => navigate(`/${lng}/Catalog`)}

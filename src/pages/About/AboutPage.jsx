@@ -31,9 +31,10 @@ function About() {
     return (
         <section style={{ "overflowX": "hidden" }}>
             <Helmet>
-                <title>Zita Aydınlatma - About Us</title>
-                <meta name="description" content="Learn more about Zita Aydınlatma, our commitment to quality, our mission and vision, and our global reach. Discover why we are a leading provider of high-quality lighting solutions." />
-                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, Quality, Mission, Vision, Global Reach, Certifications" />
+                <title>About Us | Zita Aydınlatma</title>
+                <meta name="description" content="Learn more about Zita Aydınlatma, our mission, and how we bring premium lighting solutions to homes and businesses." />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/about" />
             </Helmet>
             {/* Who We are component*/}
             <section className={styles.servus}>
@@ -50,7 +51,7 @@ function About() {
                     subTitle1={t('about_us.commitment.features1')} subTitle2={t('about_us.commitment.features2')}
                     subTitle3={t('about_us.commitment.features3')} subText1={t('about_us.commitment.subFeature1')}
                     subText2={t('about_us.commitment.subFeature2')} subText3={t('about_us.commitment.subFeature3')}
-                    src="/pages/about/commitSrc.jpg" imgStyle={{ "borderRadius": "12px" }} alt="Zita Aydınlatma Görsel" />
+                    src="/pages/about/commitSrc.webp" imgStyle={{ "borderRadius": "12px" }} alt="Zita Aydınlatma Görsel" />
             </section>
             {/*Mission & Vision component*/}
             <section className={styles.servus}>

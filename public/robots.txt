@@ -9,12 +9,5 @@ Disallow: /build/
 Disallow: /private/
 Disallow: /temp/
 
-# Disallow access to specific files
-
-# Allow access to specific files in disallowed directories
-Allow: /public/*.html
-Allow: /public/*.css
-Allow: /public/*.js
-
 # Sitemap location
 Sitemap: https://www.zitaaydinlatma.com.tr/sitemap.xml

@@ -1,11 +1,18 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import legacy from '@vitejs/plugin-legacy';
+import viteCompression from 'vite-plugin-compression';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    legacy({
+      targets: ['defaults', 'not IE 11'], // Removes old browser support
+    }),
+    viteCompression({ algorithm: 'brotliCompress' }) // Enables Brotli Compression
+  ],
   build: {
-    minify: 'esbuild', // Use esbuild for minification
+    minify: 'esbuild', // Use esbuild for fast & efficient minification
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -14,6 +21,20 @@ export default defineConfig({
           }
         }
       }
-    }
-  }
+    },
+    sourcemap: false, // Removes source maps to reduce bundle size
+    target: 'esnext', // Uses the latest JavaScript features
+    cssCodeSplit: true, // Splits CSS for better performance
+    chunkSizeWarningLimit: 500, // Avoid chunk size warnings
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom'], // Preload React for faster startup
+    esbuildOptions: {
+      treeShaking: true, // Enables tree shaking
+      minify: true, // Further reduces JS size
+    },
+  },
+  server: {
+    hmr: true, // Hot Module Replacement for fast development
+  },
 });

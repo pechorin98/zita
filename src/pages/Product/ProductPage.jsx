@@ -32,15 +32,16 @@ function Product() {
     return (
         <section style={{ "overflowX": "hidden" }}>
             <Helmet>
-                <title>Zita Aydınlatma - Products</title>
-                <meta name="description" content="Explore our wide range of high-quality lighting products at Zita Aydınlatma. From UV protection to advanced materials, find the perfect lighting solution for your needs." />
-                <meta name="keywords" content="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting, UV Protection, Materials, Sockets, Certifications" />
+                <title>Our Products | Zita Aydınlatma</title>
+                <meta name="description" content="Explore a wide range of LED lighting products, including street lights, indoor lighting, and industrial solutions." />
+                <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/products" />
+                <meta name="robots" content="index, follow" />
             </Helmet>
             {/*katalog Componentı*/}
             <section>
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
-                    text={t('products.catalogue.description')} src1="/pages/products/catalog.jpg"
-                    src2="/pages/products/catalogp1.jpg" src3="/pages/products/catalogp2.jpg" version="wrapperheader" imgContainerVersion="imgContainer"
+                    text={t('products.catalogue.description')} src1="/pages/products/catalog.webp"
+                    src2="/pages/products/catalogp1.webp" src3="/pages/products/catalogp2.webp" version="wrapperheader" imgContainerVersion="imgContainer"
                     navigate={navigate} route1="/pdfs/zitaKatalog.pdf" route2="/pdfs/zitaKatalog.pdf" route3="/pdfs/zitaKatalog.pdf" />
             </section>
             {/*UV Component*/}
@@ -60,7 +61,7 @@ function Product() {
             <section>
                 <Type3CompWithAnimation title={t('products.sockets.title')}
                     text={t('products.sockets.features1')} text2={t('products.sockets.features2')} size={windowsWith} imgStyle={{ "width": "500px" }}
-                    text3={t('products.sockets.features3')} version="containerLeftText" Component={Type4Comp} src="/pages/products/socketIcon.png" />
+                    text3={t('products.sockets.features3')} version="containerLeftText" Component={Type4Comp} src="/pages/products/socketIcon.webp" />
             </section>
             {/*Sertifika Components*/}
             <Type2CompImgAnimation title={t('products.certifications.title')}
