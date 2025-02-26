@@ -76,6 +76,11 @@ const Navbar = () => {
                                 style={{ width: "250px", marginTop: "30px", marginLeft: "20px" }}
                             />
                             <div className={styles.sideLinkContainer} style={{ marginTop: "40px" }}>
+                                <div style={{"width":"100%"}}>
+                                    <a href={navLinks.home} className='navlink'>
+                                        {translationValues.home}
+                                    </a>
+                                </div>
                                 <div style={{ width: "100%" }}>
                                     <a href={navLinks.products} className='navlink'>
                                         {translationValues.products}
@@ -91,7 +96,7 @@ const Navbar = () => {
                                         {translationValues.contact}
                                     </a>
                                 </div>
-                                <div><LanguageBtn/></div>
+                                <div><LanguageBtn /></div>
                             </div>
                             <div className={styles.imgContainer}>
                                 <img

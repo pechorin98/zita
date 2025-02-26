@@ -40,7 +40,6 @@ function Home() {
                 <title>Zita Aydınlatma |  Lighting for Homes & Businesses</title>
                 <meta name="description" content="Welcome to Zita Aydınlatma. Discover our high-quality lighting solutions for your home and business." />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/" />
             </Helmet>
             {/*Banner*/}
             <section style={{ "width": "100%", "display": "flex", "justifyContent": "center", "alignItems": "center", "backgroundColor": "black" }}>
