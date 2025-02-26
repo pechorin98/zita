@@ -13,14 +13,15 @@
 }
 
 .languageContainer:hover {
-    height: 200px; /* Adjust the height to fit all language options */
+    height: 300px; /* Adjust the height to fit all language options */
 }
 
 .languageButton {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 15px;
     color: white;
 }

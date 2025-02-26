@@ -71,7 +71,7 @@ const Navbar = () => {
                     <div className={`${styles.menuBase} ${isMenuOpen ? styles.menuOpen : styles.menuClosed}`}>
                         <div className={styles.sideNavbar}>
                             <img
-                                src="/envImg/logo.png"
+                                src="/envImg/logo.webp"
                                 alt="Zita Lighting Logo"
                                 style={{ width: "250px", marginTop: "30px", marginLeft: "20px" }}
                             />
