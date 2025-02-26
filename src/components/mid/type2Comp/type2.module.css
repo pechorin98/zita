@@ -57,8 +57,10 @@
 .imgContainerExport img {
     width: 70%;
 }
-
 .imgContainer img {
+    width: 100%;
+}
+.imgContainerLink {
     width: 30%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* Add transition for smooth scaling and box shadow */
@@ -112,7 +114,7 @@
 }
 
 @media (max-width:768px) {
-    .imgContainer img {
+    .imgContainerLink {
         width: 375px;
     }
 
@@ -156,7 +158,7 @@
 }
 
 @media (max-width:400px) {
-    .imgContainer img {
+    .imgContainerLink{
         width: 300px;
     }
 }

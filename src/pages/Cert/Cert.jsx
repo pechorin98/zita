@@ -21,7 +21,7 @@ function Cert() {
             <section className={styles.container}>
                 <a href="/pdfs/emc.pdf"><img className={styles.imgContainer} src="/envImg/emcser.webp" alt="Zita aydınlatma sertifika" /></a>
                 <a href="/pdfs/ptc.pdf"><img className={styles.imgContainer} src="/envImg/ptcser.webp" alt="Zita aydınlatma sertifika" /></a>
-                <a href={"/pdfs/Rohs.pdf" }><img className={styles.imgContainer} src="/envImg/RoHSser.png" alt="Zita aydınlatma sertifika" /></a>
+                <a href={"/pdfs/Rohs.pdf" }><img className={styles.imgContainer} src="/envImg/RoHSser.webp" alt="Zita aydınlatma sertifika" /></a>
                 <a href="/pdfs/ISO9001.pdf"><img className={styles.imgContainer} src="/envImg/certifikaxd.webp" alt="Zita aydınlatma sertifika" /></a>
             </section>
         </section>

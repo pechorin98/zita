@@ -3,12 +3,8 @@ import styles from './type2.module.css';
 import PrimaryButton from '../../micro/primaryDesktopButton/PrimaryButton';
 
 
-function Type2Comp({ src1, src2, src3, text, title, isButton, buttonText, buttonRoute, version, imgContainerVersion, contextContainerVersion, imgStyle1, imgStyle2, imgStyle3, route1, route2, route3, navigate }) {
+function Type2Comp({ src1, src2, src3, text, title, isButton, buttonText, buttonRoute, version, imgContainerVersion, contextContainerVersion, imgStyle1, imgStyle2, imgStyle3, route1, route2, route3 }) {
 
-    const handleNavigate = (route) => {
-        navigate(route)
-    };
-    
     return (
         <section className={styles[version]}>
             <section className={styles.container}>
@@ -17,9 +13,9 @@ function Type2Comp({ src1, src2, src3, text, title, isButton, buttonText, button
                     <p className='paraText' style={{ "marginBottom": "32px" }}>{text}</p>
                 </div>
                 <div className={styles[imgContainerVersion]}>
-                    <img src={src1} loading="lazy" onClick={() => handleNavigate(route1)} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle1} />
-                    {src2 !== "" && <img loading="lazy" onClick={() => handleNavigate(route2)} src={src2} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle2} />}
-                    {src3 !== "" && <img loading="lazy" onClick={() => handleNavigate(route3)} src={src3} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle3} />}
+                    <a  className={styles.imgContainerLink} href={route1} target='_blank'><img src={src1} loading="lazy" alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle1} /></a>
+                    {src2 !== "" && <a href={route2} target='_blank' className={styles.imgContainerLink} ><img loading="lazy"  src={src2} alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle2} /></a>}
+                    {src3 !== "" && <a href={route3} target='_blank' className={styles.imgContainerLink} ><img loading="lazy" src={src3}  alt="Zita aydınlatma sertifika veya katolog görselleri" style={imgStyle3} /></a>}
                 </div>
                 <div style={{ "width": "100%", "display": "flex", "justifyContent": "center", "alignItems": "center", "marginTop": "48px" }}>
                     {isButton && <PrimaryButton text={buttonText} navRoute={buttonRoute} />}

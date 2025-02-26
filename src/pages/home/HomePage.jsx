@@ -57,7 +57,7 @@ function Home() {
                     version="containerLeftText"
                     text={t('home.products.description')}
                     buttonText={t('home.products.button')} buttonUrl="/pdfs/zitaKatalog.pdf"
-                    src="/envImg/katalogv2.webp" imgStyle={{ "width": "500px" }} size={windowsWith} style={{ "marginTop": "50px" }} />
+                    src="/envImg/katalogv2.webp" imgStyle={{ "width": "500px" }} size={windowsWith} style={{ "marginTop": "50px" }} isBlank/>
             </section>
             {/*About Us Component*/}
             <section>

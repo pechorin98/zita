@@ -106,12 +106,14 @@ function Contact() {
                 </div>
 
                 <div className={styles.imgContainer}>
-                    <img
-                        src="/pages/products/catalog.webp"
-                        alt="Zita Aydınlatma Katalog"
-                        className={styles.img1}
-                        onClick={() => navigate(`/${lng}/Catalog`)}
-                    />
+                    <a href="/pdfs/zitaKatalog.pdf" target='_blank'>
+                        <img
+                            src="/pages/products/catalog.webp"
+                            alt="Zita Aydınlatma Katalog"
+                            className={styles.img1}
+
+                        />
+                    </a>
                 </div>
             </section>
         </section>

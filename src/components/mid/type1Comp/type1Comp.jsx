@@ -3,7 +3,7 @@ import styles from './type1Comp.module.css';
 import PrimaryButton from '../../micro/primaryDesktopButton/PrimaryButton';
 import MyMap from '../../../services/myMap';
 
-function Type1Comp({ version, buttonText, title, text, src, alt, buttonUrl, imgStyle, size, style, noButton, styleContent }) {
+function Type1Comp({ version, buttonText, title, text, src, alt, buttonUrl, imgStyle, size, style, noButton, styleContent,isBlank }) {
     return (
         <section className={styles.wrapper} style={style}>
             <section className={styles[version]}>
@@ -12,7 +12,7 @@ function Type1Comp({ version, buttonText, title, text, src, alt, buttonUrl, imgS
                     <h1 className='titleText' style={{ marginBottom: '24px' }}>{title}</h1>
                     {size < 900 && (src ? <img src={src} alt="Zita, Aydınlatma, Lighting, LED, Lights, Home Lighting, Commercial Lighting" className={styles.imgStyle} style={imgStyle} loading='lazy' /> : <MyMap/>)}
                     <p className='paraText' style={{ marginBottom: '32px' }}>{text}</p>
-                    {!noButton && <PrimaryButton text={buttonText} navRoute={buttonUrl} />}
+                    {!noButton && <PrimaryButton text={buttonText} navRoute={buttonUrl} blank={isBlank} />}
                 </div>
             </section>
         </section>
