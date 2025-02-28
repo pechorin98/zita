@@ -6,7 +6,8 @@ import {
   Navigate,
   Outlet,
   useParams,
-  useLocation
+  useLocation,
+  useNavigate
 } from 'react-router-dom';
 import ReactGA from "react-ga4";
 import { AnimatePresence, motion } from 'framer-motion';
@@ -26,6 +27,8 @@ import Iso from './pages/Iso9001/Iso9001';
 import GA4AnalyticsTracker from './GA4AnalyticsTracker';
 import LanguageBtn from './components/micro/languageBtn/languageBtn';
 import { Helmet } from 'react-helmet';
+import CookiePopup from './components/micro/cookiePopup/CookiePopup';
+import Policy from './pages/Policy/Policy';
 
 // 🔥 Inject Structured Data for Google SEO
 const addStructuredData = () => {
@@ -98,6 +101,7 @@ const PageWrapper = ({ children }) => {
 function LanguageRoutes() {
   const { lng } = useParams();
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const preferredLanguage = lng || navigator.language.split('-')[0];
@@ -119,6 +123,7 @@ function LanguageRoutes() {
           <Outlet />
         </AnimatePresence>
       </div>
+      <CookiePopup navigate={navigate} lng={lng} />
       <Footer />
       <LanguageBtn />
     </div>
@@ -159,6 +164,7 @@ function App() {
           <Route path="Emc" element={<PageWrapper><Emc /></PageWrapper>} />
           <Route path="Ptc" element={<PageWrapper><Ptc /></PageWrapper>} />
           <Route path="Iso" element={<PageWrapper><Iso /></PageWrapper>} />
+          <Route path="Policy" element={<Policy />} />
           <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />
         </Route>
         <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />

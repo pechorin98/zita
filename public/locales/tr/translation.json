@@ -110,5 +110,63 @@
         "Contact Informations": "İletişim Bilgileri",
         "heading": "Yardıma mı ihtiyacınız var? WhatsApp'ta sohbet edelim!",
         "wpText": "Bizimle iletişime geçmek için WhatsApp ikonuna tıklayın!"
+    },
+    "cookie_policy": {
+      "title": "Zita Aydınlatma Çerez Politikası",
+      "sections": {
+        "general_info": {
+          "title": "1. Genel Bilgilendirme",
+          "content": "Bu Çerez Politikası, Zita Aydınlatma'ya ait web sitesini (“Site”) ziyaret eden kullanıcılara, site kullanımı sırasında toplanan çerezler (“cookies”) ve benzeri teknolojiler hakkında bilgi vermek amacıyla hazırlanmıştır. Sitemiz, Türkiye, Avrupa, Kuzey Afrika ve Orta Doğu'daki kullanıcılar tarafından erişilebilir olup, çerez politikamız tüm bu bölgelerde geçerlidir."
+        },
+        "cookies_usage": {
+          "title": "2. Çerezler ve Kullanım Amaçları",
+          "content": "Web sitemiz, kullanıcı deneyimini iyileştirmek, site trafiğini analiz etmek ve hizmetlerimizi geliştirmek amacıyla çerezleri kullanmaktadır. Çerezler aşağıdaki amaçlarla kullanılmaktadır:"
+        },
+        "types_of_cookies": {
+          "mandatory": "Zorunlu Çerezler: Sitenin temel fonksiyonlarının çalışmasını sağlamak.",
+          "performance": "Performans ve Analiz Çerezleri: Site kullanımını analiz ederek hizmetlerimizi iyileştirmek.",
+          "marketing": "Reklam ve Pazarlama Çerezleri: Kullanıcılara ilgi alanlarına uygun içerik sunabilmek."
+        },
+        "personal_data": {
+          "title": "3. Toplanan Kişisel Veriler ve Koruma Politikaları",
+          "content": "Sitemizdeki İletişim Sayfası aracılığıyla kullanıcılarımızdan aşağıdaki bilgileri toplayabiliriz:",
+          "data_list": [
+            "Ad ve soyad",
+            "Telefon numarası",
+            "E-posta adresi",
+            "Şirket adı",
+            "Mesaj içeriği"
+          ],
+          "protection_info": "Bu bilgiler, yalnızca bizimle iletişime geçen kullanıcılara yanıt vermek ve taleplerini değerlendirmek amacıyla kullanılır. Bu veriler, Zita Aydınlatma veya sektörümüzle ilgisi olmayan kişiler veya şirketlerle kesinlikle paylaşılmaz."
+        },
+        "cookie_management": {
+          "title": "4. Çerez Tercihlerinizi Nasıl Yönetebilirsiniz?",
+          "content": "Tarayıcı ayarlarınızı kullanarak çerezleri kabul edebilir, reddedebilir veya silme işlemi yapabilirsiniz. İşte yaygın tarayıcılarda çerez ayarlarını düzenleme yolları:",
+          "browsers": {
+            "chrome": "Google Chrome: Ayarlar > Gizlilik ve Güvenlik > Site Ayarları > Çerezler",
+            "firefox": "Mozilla Firefox: Seçenekler > Gizlilik ve Güvenlik > Çerezler ve Site Verileri",
+            "edge": "Microsoft Edge: Ayarlar > Gizlilik, Arama ve Hizmetler > Çerezler ve Site Verileri",
+            "safari": "Safari: Tercihler > Gizlilik > Çerezler ve Web Sitesi Verileri"
+          }
+        },
+        "updates": {
+          "title": "5. Politika Güncellemeleri",
+          "content": "Zita Aydınlatma, bu çerez politikasını yasal gereklilikler ve hizmet geliştirmeleri doğrultusunda güncelleyebilir. Yapılan değişiklikler sitede yayınlandığı anda yürürlüğe girer."
+        },
+        "contact": {
+          "title": "6. Bizimle İletişime Geçin",
+          "content": "Çerez politikamız veya kişisel verileriniz hakkında sorularınız varsa, aşağıdaki iletişim bilgilerinden bize ulaşabilirsiniz:",
+          "company": "Zita Aydınlatma",
+          "address": "Adres: [Şirket Adresi]",
+          "email": "E-posta: [E-posta Adresi]",
+          "phone": "Telefon: [Telefon Numarası]"
+        }
+      }
+    },
+    "cookie_banner": {
+      "message": "Deneyiminizi geliştirmek için çerezleri kullanıyoruz. Kabul ediyor musunuz?",
+      "accept": "Kabul Et",
+      "decline": "Reddet",
+      "policy": "Çerez Politikasını Göster"
     }
 }

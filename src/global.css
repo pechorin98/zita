@@ -110,6 +110,14 @@ body {
     padding: 0;
     font-weight: 500;
 }
+.subTextCookie {
+    font-family: "Roboto Condensed", "sans-serif";
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
 .subTextLan {
     font-family: "Roboto Condensed", "sans-serif";
     color: #E6E6E6;

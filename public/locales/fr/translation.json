@@ -108,5 +108,63 @@
         "Contact Informations": "Informations de contact",
         "heading": "Besoin d'aide ? Discutons sur WhatsApp !",
         "wpText": "Cliquez sur l'icône WhatsApp pour nous contacter !"
+      },
+    "cookie_policy": {
+      "title": "Politique de Cookies de Zita Aydınlatma",
+      "sections": {
+        "general_info": {
+          "title": "1. Informations Générales",
+          "content": "Cette politique de cookies a été préparée pour informer les utilisateurs visitant le site web (« Site ») de Zita Aydınlatma sur les cookies et les technologies similaires collectées lors de l'utilisation du site. Notre site est accessible aux utilisateurs en Turquie, en Europe, en Afrique du Nord et au Moyen-Orient, et notre politique de cookies s'applique à toutes ces régions."
+        },
+        "cookies_usage": {
+          "title": "2. Cookies et Leurs Objectifs d'Utilisation",
+          "content": "Notre site web utilise des cookies pour améliorer l'expérience utilisateur, analyser le trafic du site et améliorer nos services. Les cookies sont utilisés aux fins suivantes:"
+        },
+        "types_of_cookies": {
+          "mandatory": "Cookies Essentiels : Assurent le bon fonctionnement des fonctions de base du site.",
+          "performance": "Cookies de Performance et d'Analyse : Analyser l'utilisation du site pour améliorer nos services.",
+          "marketing": "Cookies Publicitaires et Marketing : Fournir du contenu adapté aux intérêts des utilisateurs."
+        },
+        "personal_data": {
+          "title": "3. Données Personnelles Collectées et Politiques de Protection",
+          "content": "Via la page de contact de notre site, nous pouvons collecter les informations suivantes de nos utilisateurs :",
+          "data_list": [
+            "Nom et prénom",
+            "Numéro de téléphone",
+            "Adresse e-mail",
+            "Nom de l'entreprise",
+            "Contenu du message"
+          ],
+          "protection_info": "Ces informations sont utilisées uniquement pour répondre aux utilisateurs qui nous contactent et évaluer leurs demandes. Ces données ne sont en aucun cas partagées avec des tiers ou des entreprises non concernées."
+        },
+        "cookie_management": {
+          "title": "4. Comment Gérer Vos Préférences de Cookies ?",
+          "content": "Vous pouvez accepter, refuser ou supprimer les cookies en utilisant les paramètres de votre navigateur. Voici comment gérer les paramètres des cookies dans les navigateurs courants:",
+          "browsers": {
+            "chrome": "Google Chrome : Paramètres > Confidentialité et Sécurité > Paramètres du site > Cookies",
+            "firefox": "Mozilla Firefox : Options > Confidentialité et Sécurité > Cookies et données du site",
+            "edge": "Microsoft Edge : Paramètres > Confidentialité, Recherche et Services > Cookies et données du site",
+            "safari": "Safari : Préférences > Confidentialité > Cookies et données des sites web"
+          }
+        },
+        "updates": {
+          "title": "5. Mises à Jour de la Politique",
+          "content": "Zita Aydınlatma peut mettre à jour cette politique de cookies en fonction des exigences légales et des améliorations de service. Toute modification prendra effet dès sa publication sur le site."
+        },
+        "contact": {
+          "title": "6. Contactez-Nous",
+          "content": "Si vous avez des questions concernant notre politique de cookies ou vos données personnelles, vous pouvez nous contacter aux coordonnées suivantes :",
+          "company": "Zita Aydınlatma",
+          "address": "Adresse : [Adresse de l'entreprise]",
+          "email": "E-mail : [Adresse e-mail]",
+          "phone": "Téléphone : [Numéro de téléphone]"
+        }
+      }
+    },
+      "cookie_banner": {
+        "message": "Nous utilisons des cookies pour améliorer votre expérience. Acceptez-vous ou refusez-vous?",
+        "accept": "Accepter",
+        "decline": "Refuser",
+        "policy": "Afficher la politique"
       }
 }
