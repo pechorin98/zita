@@ -161,10 +161,13 @@
         }
       }
     },
-      "cookie_banner": {
-        "message": "Nous utilisons des cookies pour améliorer votre expérience. Acceptez-vous ou refusez-vous?",
-        "accept": "Accepter",
-        "decline": "Refuser",
-        "policy": "Afficher la politique"
-      }
+    "cookie_banner": {
+      "message": "Nous utilisons des cookies pour améliorer votre expérience. Acceptez-vous ou refusez-vous?",
+      "accept": "Accepter",
+      "decline": "Refuser",
+      "policy": "Afficher la politique"
+    },
+    "buttons": {
+      "learn_more": "En savoir plus"
+    }
 }

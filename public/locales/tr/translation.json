@@ -168,5 +168,8 @@
       "accept": "Kabul Et",
       "decline": "Reddet",
       "policy": "Çerez Politikasını Göster"
+    },
+    "buttons": {
+      "learn_more": "Daha fazla öğren"
     }
 }

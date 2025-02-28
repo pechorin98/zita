@@ -166,5 +166,8 @@
       "accept": "Akzeptieren",
       "decline": "Ablehnen",
       "policy": "Richtlinie anzeigen"
+    },
+    "buttons": {
+      "learn_more": "Mehr erfahren"
     }      
 }

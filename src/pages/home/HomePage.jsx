@@ -54,7 +54,7 @@ function Home() {
                 </video>
             </section>
             <div style={{ "marginTop": "20px", "display": "flex", "justifyContent": "center", "alignItems": "center" }} className={styles.bannerBtnContainer}>
-                <PrimaryButton text="Learn More!" navRoute={`/${lng}/Product`} />
+                <PrimaryButton text={t('buttons.learn_more')} navRoute={`/${lng}/Product`} />
             </div>
             {/*Product Component*/}
             <section>

@@ -162,13 +162,13 @@
         }
       }
     },
-    
-      "cookie_banner": {
-        "message": "We use cookies to improve your experience. Accept or Decline?",
-        "accept": "Accept",
-        "decline": "Decline",
-        "policy": "Show Policy"
-      }
-    
-    
+    "cookie_banner": {
+      "message": "We use cookies to improve your experience. Accept or Decline?",
+      "accept": "Accept",
+      "decline": "Decline",
+      "policy": "Show Policy"
+    },
+    "buttons": {
+      "learn_more": "Learn More"
+      }    
 }
