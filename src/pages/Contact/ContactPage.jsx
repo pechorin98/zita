@@ -39,8 +39,8 @@ function Contact() {
     return (
         <section className={styles.wrapper}>
             <Helmet>
-                <title>Contact Zita Aydınlatma | Customer Support & Inquiries</title>
-                <meta name="description" content="Need help with LED lighting solutions? Contact Zita Aydınlatma for support, business inquiries, or custom lighting projects. Call, email, or visit us today!" />
+                <title>İletişim |  Zita Aydınlatma Müşteri Hizmetleri</title>
+                <meta name="description" content="Dış mekan, bahçe ve iç mekan aydınlatma çözümlerimiz hakkında bilgi almak için bizimle iletişime geçin. Fiyat teklifi almak ve fabrikamızı ziyaret etmek için bizi arayın." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/contact" />
             </Helmet>

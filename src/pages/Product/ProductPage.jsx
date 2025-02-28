@@ -32,8 +32,8 @@ function Product() {
     return (
         <section style={{ "overflowX": "hidden" }}>
             <Helmet>
-                <title>Our Products | Zita Aydınlatma</title>
-                <meta name="description" content="Explore a wide range of LED lighting products, including street lights, indoor lighting, and industrial solutions." />
+                <title>Ürünlerimiz | Bahçe ve Dış Mekan Aydınlatma Çözümleri - Zita Aydınlatma</title>
+                <meta name="description" content="Zita Aydınlatma, dış mekan ve bahçe aydınlatma çözümlerinde güvenilir üreticinizdir. Avrupa standartlarına uygun, su geçirmez, orijinal ABS gövdeli ve sararmalara karşı UV korumalı aydınlatma ürünleri." />
                 <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/products" />
                 <meta name="robots" content="index, follow" />
             </Helmet>

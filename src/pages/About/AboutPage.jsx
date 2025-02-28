@@ -31,8 +31,8 @@ function About() {
     return (
         <section style={{ "overflowX": "hidden" }}>
             <Helmet>
-                <title>About Us | Zita Aydınlatma</title>
-                <meta name="description" content="Learn more about Zita Aydınlatma, our mission, and how we bring premium lighting solutions to homes and businesses." />
+                <title>Hakkımızda | Zita Aydınlatma - Bahçe ve Dış Mekan Aydınlatma Üreticisi</title>
+                <meta name="description" content="Bahçe ve Dış Mekan Aydınlatma üretiminde yılları aşan tecrübemiz, Avrupa Standartlarına uygunluk belgelerimiz ile iş ortaklarımıza kaliteli ve dayanıklı ürünler sunuyoruz." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/about" />
             </Helmet>

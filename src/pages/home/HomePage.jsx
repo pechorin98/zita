@@ -37,8 +37,8 @@ function Home() {
     return (
         <section>
             <Helmet>
-                <title>Zita Aydınlatma |  Lighting for Homes & Businesses</title>
-                <meta name="description" content="Welcome to Zita Aydınlatma. Discover our high-quality lighting solutions for your home and business." />
+                <title>Zita Aydınlatma | Bahçe Aydınlatma, Dış Mekan Aydınlatma ve Toptan Aydınlatma Çözümleri, İstanbul’da Aydınlatma Fabrikası</title>
+                <meta name="description" content="Zita Aydınlatma, dış mekan ve bahçe aydınlatmada 10 yılı aşan tecrübe ve üretim. İstanbul’da %100 Yerli Üretim ürünlerimizi incelemek için sitemize göz atın." />
                 <meta name="robots" content="index, follow" />
             </Helmet>
             {/*Banner*/}
@@ -56,7 +56,7 @@ function Home() {
                     version="containerLeftText"
                     text={t('home.products.description')}
                     buttonText={t('home.products.button')} buttonUrl="/pdfs/zitaKatalog.pdf"
-                    src="/envImg/katalogv2.webp" imgStyle={{ "width": "500px" }} size={windowsWith} style={{ "marginTop": "50px" }} isBlank/>
+                    src="/envImg/katalogv2.webp" imgStyle={{ "width": "500px" }} size={windowsWith} style={{ "marginTop": "50px" }} isBlank />
             </section>
             {/*About Us Component*/}
             <section>
