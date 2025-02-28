@@ -92,10 +92,6 @@ function Contact() {
                         <span className="text-sm">(0212) 678 37 90</span>
                     </div>
                     <div className={styles.contactBox}>
-                        <Phone className="h-6 w-6 flex-shrink-0" />
-                        <span className="text-sm">+90 533 742 53 29 (WhatsApp)</span>
-                    </div>
-                    <div className={styles.contactBox}>
                         <Mail className="h-6 w-6 mt-1 flex-shrink-0" />
                         <span className="text-sm">zitaaydinlatma@hotmail.com</span>
                     </div>
@@ -104,7 +100,18 @@ function Contact() {
                         <span className="text-sm">info@zitaaydinlatma.com.tr</span>
                     </div>
                 </div>
-
+                <div className={styles.wpContainer}>
+                    <div>
+                        <h1 className='titleText'>{t('contact.heading')}</h1>
+                        <p className='paraText'>{t('contact.wpText')}</p>
+                    </div>
+                    <div className={styles.wpBox}>
+                        <a href="https://wa.me/905337425329" target="_blank" className={styles.whatsappButton}>
+                            <img src="/envImg/wpIcon.png" alt="Zita Aydınlatma Whatsapp İletişim Butonu" />
+                        </a>
+                        <p style={{"marginTop":"20px"}}className="paraText">+905337425329</p>
+                    </div>
+                </div>
                 <div className={styles.imgContainer}>
                     <a href="/pdfs/zitaKatalog.pdf" target='_blank'>
                         <img

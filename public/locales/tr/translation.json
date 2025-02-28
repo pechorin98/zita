@@ -107,6 +107,8 @@
         "Phone Number": "Telefon Numarası",
         "Subject": "Konu",
         "Message": "Mesaj",
-        "Contact Informations": "İletişim Bilgileri"
-      }
+        "Contact Informations": "İletişim Bilgileri",
+        "heading": "Yardıma mı ihtiyacınız var? WhatsApp'ta sohbet edelim!",
+        "wpText": "Bizimle iletişime geçmek için WhatsApp ikonuna tıklayın!"
+    }
 }
