@@ -41,7 +41,7 @@ function Product() {
             {/*katalog Componentı*/}
             <section>
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
-                    text={t('products.catalogue.description')} src1="/pages/products/catalog.webp"
+                    text={t('products.catalogue.description')} src1="/envImg/katalogMain.webp"
                     src2="/pages/products/catalogp1.webp" src3="/pages/products/catalogp2.webp" version="wrapperheader" imgContainerVersion="imgContainer"
                     navigate={navigate} route1="/pdfs/zitaKatalog.pdf" route2="/pdfs/zitaKatalog.pdf" route3="/pdfs/zitaKatalog.pdf" />
             </section>

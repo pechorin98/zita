@@ -114,7 +114,7 @@ function Contact() {
                 <div className={styles.imgContainer}>
                     <a href="/pdfs/zitaKatalog.pdf" target='_blank'>
                         <img
-                            src="/pages/products/catalog.webp"
+                            src="/envImg/katalogMain.webp"
                             alt="Zita Aydınlatma Katalog"
                             className={styles.img1}
 

@@ -100,7 +100,7 @@ const Navbar = () => {
                             </div>
                             <div className={styles.imgContainer}>
                                 <img
-                                    src="/envImg/betterCatalog.png"
+                                    src="/envImg/katalogMain.webp"
                                     alt="Zita aydınlatma ürünleri kataloğu"
                                 />
                             </div>
