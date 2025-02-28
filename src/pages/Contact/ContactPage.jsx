@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 import styles from './contactPage.module.css';
-import PrimaryButton from '../../components/micro/primaryDesktopButton/PrimaryButton';
 import PrimaryInput from '../../components/micro/primaryInput/primaryInput';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import emailjs from 'emailjs-com';
 import { Helmet } from 'react-helmet';
 
