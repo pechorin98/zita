@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 const CookiePopup = ({ navigate, lng }) => {
     const [showPopup, setShowPopup] = useState(false);
+    const [hidePopup, setHidePopup] = useState(false);
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -19,13 +20,15 @@ const CookiePopup = ({ navigate, lng }) => {
     const acceptCookies = () => {
         localStorage.setItem("cookieConsent", "accepted");
         ReactGA.initialize("G-CY1N86K8X4"); // Enable tracking
-        setShowPopup(false);
+        setHidePopup(true);
+        setTimeout(() => setShowPopup(false), 500); // Wait for animation to complete
     };
 
     const declineCookies = () => {
         localStorage.setItem("cookieConsent", "declined");
         ReactGA.ga("set", "anonymizeIp", true); // Disable tracking
-        setShowPopup(false);
+        setHidePopup(true);
+        setTimeout(() => setShowPopup(false), 500); // Wait for animation to complete
     };
 
     const showCookiePolicy = () => {
@@ -35,7 +38,7 @@ const CookiePopup = ({ navigate, lng }) => {
     if (!showPopup) return null; // If user already chose, don't show popup
 
     return (
-        <div className={styles.cookiePopup}>
+        <div className={`${styles.cookiePopup} ${hidePopup ? styles.hide : ''}`}>
             <p className="subTextCookie">{t("cookie_banner.message")}</p>
             <div className={styles.cookieContainer}>
                 <button onClick={acceptCookies} className={styles.cookieButton}>
