@@ -1,0 +1,32 @@
+.certContainer{
+    width: 80%;
+    padding-left: 10%;
+    margin-top: 150px;
+}
+.certWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.certWrapper h1{
+    margin-bottom: 16px;
+}
+.certWrapper p{
+    margin-bottom: 32px;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 64px;
+    row-gap: 32px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+.imgContainer img{
+    width: 200px;
+}
