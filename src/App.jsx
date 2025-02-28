@@ -108,6 +108,8 @@ function LanguageRoutes() {
     }
   }, [lng]);
 
+
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
@@ -128,6 +130,9 @@ function App() {
     addStructuredData();
   }, []);
 
+  useEffect(() => {
+    document.documentElement.lang = i18n.language; // Set <html lang="currentLanguage">
+  }, [i18n.language]);
   return (
     <Router>
       <GA4AnalyticsTracker />
