@@ -8,6 +8,7 @@ import Type2CompWithAnimation from '../../components/mid/type2Comp/Type2CompWith
 import Type1CompWithAnimation from '../../components/mid/type2Comp/Type1CompWithAnimation';
 import { Helmet } from 'react-helmet';
 import Type7Comp from '../../components/mid/type7Comp/type7Comp';
+import LanguagePopup from '../../components/micro/LanguagePopUp/LanguagePopUp';
 
 function Home() {
 
@@ -16,6 +17,7 @@ function Home() {
 
     const [videoSrc, setVideoSrc] = useState('/pages/home/banner.mp4');
     const [windowsWith, setWindowsWith] = useState(null);
+    const [isPopupOpen, setIsPopupOpen] = useState(true);
 
     useEffect(() => {
         const updateVideoSrc = () => {
@@ -41,6 +43,10 @@ function Home() {
                 <meta name="description" content="Zita Aydınlatma, dış mekan ve bahçe aydınlatmada 10 yılı aşan tecrübe ve üretim. İstanbul’da %100 Yerli Üretim ürünlerimizi incelemek için sitemize göz atın." />
                 <meta name="robots" content="index, follow" />
             </Helmet>
+            {windowsWith <= 1024 && (
+            <div>
+                <LanguagePopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+            </div>)}
             {/*Banner*/}
             <section style={{ "width": "100%", "display": "flex", "justifyContent": "center", "alignItems": "center", "backgroundColor": "black" }}>
                 <video autoPlay muted playsInline className={styles.bannerVideo} preload='auto'>
