@@ -1,34 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home Page -->
   <url>
-    <loc>https://www.zitaaydinlatma.com.tr/</loc>
-    <lastmod>2025-02-26</lastmod>
+    <loc>https://www.zitaaydinlatma.com.tr/tr/</loc>
+    <lastmod>2025-02-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.zitaaydinlatma.com.tr/tr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zitaaydinlatma.com.tr/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.zitaaydinlatma.com.tr/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.zitaaydinlatma.com.tr/fr/"/>
   </url>
+
+  <!-- About Page -->
   <url>
-    <loc>https://www.zitaaydinlatma.com.tr/about</loc>
-    <lastmod>2025-02-26</lastmod>
+    <loc>https://www.zitaaydinlatma.com.tr/tr/about</loc>
+    <lastmod>2025-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.zitaaydinlatma.com.tr/tr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zitaaydinlatma.com.tr/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.zitaaydinlatma.com.tr/de/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.zitaaydinlatma.com.tr/fr/about"/>
   </url>
+
+  <!-- Contact Page -->
   <url>
-    <loc>https://www.zitaaydinlatma.com.tr/contact</loc>
-    <lastmod>2025-02-26</lastmod>
+    <loc>https://www.zitaaydinlatma.com.tr/tr/contact</loc>
+    <lastmod>2025-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.zitaaydinlatma.com.tr/tr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zitaaydinlatma.com.tr/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.zitaaydinlatma.com.tr/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.zitaaydinlatma.com.tr/fr/contact"/>
   </url>
+
+  <!-- Products Page -->
   <url>
-    <loc>https://www.zitaaydinlatma.com.tr/products</loc>
-    <lastmod>2025-02-26</lastmod>
+    <loc>https://www.zitaaydinlatma.com.tr/tr/products</loc>
+    <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.zitaaydinlatma.com.tr/tr/products"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zitaaydinlatma.com.tr/en/products"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.zitaaydinlatma.com.tr/de/products"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.zitaaydinlatma.com.tr/fr/products"/>
   </url>
-    <url>
-    <loc>https://www.zitaaydinlatma.com.tr/Certifications</loc>
-    <lastmod>2025-02-26</lastmod>
+
+  <!-- Certifications Page -->
+  <url>
+    <loc>https://www.zitaaydinlatma.com.tr/tr/certifications</loc>
+    <lastmod>2025-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.zitaaydinlatma.com.tr/tr/certifications"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.zitaaydinlatma.com.tr/en/certifications"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.zitaaydinlatma.com.tr/de/certifications"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.zitaaydinlatma.com.tr/fr/certifications"/>
   </url>
-  <!-- Add more URLs here as needed -->
+
 </urlset>

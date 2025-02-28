@@ -135,6 +135,14 @@ function App() {
   }, [i18n.language]);
   return (
     <Router>
+      <Helmet>
+        {/* 🔥 HARD-CODED HREFLANG TAGS 🔥 */}
+        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/tr/" hreflang="tr" />
+        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/en/" hreflang="en" />
+        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/de/" hreflang="de" />
+        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/fr/" hreflang="fr" />
+        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/" hreflang="x-default" />
+      </Helmet>
       <GA4AnalyticsTracker />
       <Routes>
         {/* Eğer URL’de dil parametresi yoksa mevcut i18n dili ile yönlendir */}
