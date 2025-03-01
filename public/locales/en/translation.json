@@ -170,5 +170,12 @@
     },
     "buttons": {
       "learn_more": "Learn More"
-      }    
+      },
+      
+    "certifications": {
+      "title": "Certifications",
+      "instruction": "To view the certification file, please click on the corresponding image."
+    }
+      
+          
 }

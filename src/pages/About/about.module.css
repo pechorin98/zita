@@ -1,8 +1,51 @@
 .servus{
     margin-bottom: 200px;
 }
+.exportContainer{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 48px;
+}
+.textsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 16px;
+}
+.exportImgContainer{
+    width: 950px;
+}
+@media (max-width:1024px) {
+    .exportImgContainer{
+        width: 750px;
+    } 
+}
+@media (max-width:800px) {
+    .exportImgContainer{
+        width: 500px;
+    }
+}
+@media (max-width:600px) {
+    .exportContainer{
+        width: 95%;
+        padding-left: 2.5%;
+    }
+    .exportImgContainer{
+        width: 400px;
+    }
+}
 @media (max-width:500px) {
     .servus{
         margin-bottom: 70px;
+    }
+    .exportImgContainer{
+        width: 300px;
     }
 }

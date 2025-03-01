@@ -74,7 +74,7 @@ const Footer = () => {
                             <a className="text-smLink" href={`/${lng}/About`}>{translationValues.aboutUs}</a>
                             <a className="text-smLink" href={`/${lng}/Product`}>{translationValues.products}</a>
                             <a className="text-smLink" href={`/${lng}/Contact`}>{translationValues.contact}</a>
-                            <a className="text-smLink" href="/">{translationValues.productsButton}</a>
+                            <a className="text-smLink" href="/pdfs/zitaKatalog.pdf">{translationValues.productsButton}</a>
                         </div>
                     </div>
 
@@ -82,8 +82,8 @@ const Footer = () => {
                     <div className={styles.lawContainer}>
                         <h1 className="footerTitle">{translationValues.legalPolicy}</h1>
                         <div className={styles.policyContainer}>
-                            <a className="text-smLink" href="">Cookie Policy</a>
-                            <a className="text-smLink" href="">{translationValues.certifications}</a>
+                            <a className="text-smLink" href={`/${lng}/Policy`}>Cookie Policy</a>
+                            <a className="text-smLink" href={`/${lng}/Certifications`}>{translationValues.certifications}</a>
                             <div className={styles.linksContainer}>
                                 <a href="https://www.facebook.com/AydinlatmaZita"
                                     className={styles.socialIcon}

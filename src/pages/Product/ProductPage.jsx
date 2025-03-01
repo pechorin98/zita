@@ -70,9 +70,9 @@ function Product() {
                     <h1 className='titleText'>{t('products.certifications.title')}</h1>
                     <p className='paraText'>{t('products.certifications.description')}</p>
                     <div className={styles.imgContainer}>
-                        <img src="/pages/products/cekucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"/>
-                        <img src="/pages/products/rohskucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"/>
-                        <img src="/pages/products/isokucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"/>
+                        <img src="/pages/products/cekucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"   loading='lazy' />
+                        <img src="/pages/products/rohskucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları" loading='lazy' />
+                        <img src="/pages/products/isokucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"  loading='lazy' />
                     </div>
                     <PrimaryButton text={t('home.certifications.button')} navRoute={`/${lng}/Certifications`}/>
                 </div>

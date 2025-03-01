@@ -69,9 +69,13 @@ function About() {
             </section>
             {/*global Reach Component*/}
             <section className={styles.servus}>
-                <Type2CompImgAnimation src1="/pages/about/export.webp" src2="" src3="" size={windowsWith}
-                    version="wrapper" isButton={false} contextContainerVersion="contextContainer" imgContainerVersion="imgContainerExport"
-                    text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} alt="Zita Aydınlatma Görsel" />
+                <section className={styles.exportContainer}>
+                    <div className={styles.textsContainer}>
+                        <h1 className='titleText'>{t('about_us.certifications.title')}</h1>
+                        <p className='paraText'>{t('about_us.certifications.des1')}</p>
+                    </div>
+                    <img className={styles.exportImgContainer}src="/pages/about/export.webp" alt="Zita Aydınlatma ihracat yapılan ülkeler haritası" loading='lazy' />
+                </section>
             </section>
             {/*Sertifications Component*/}
             <section className={styles.servus}>
@@ -83,3 +87,6 @@ function About() {
 
 }
 export default About;
+/*                <Type2CompImgAnimation src1="/pages/about/export.webp" src2="" src3="" size={windowsWith}
+                    version="wrapper" isButton={false} contextContainerVersion="contextContainer" imgContainerVersion="imgContainerExport"
+                    text={t('about_us.global_reach.description')} title={t('about_us.global_reach.title')} alt="Zita Aydınlatma Görsel" /> */

@@ -169,5 +169,9 @@
     },
     "buttons": {
       "learn_more": "En savoir plus"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "instruction": "Pour voir le fichier de certification, veuillez cliquer sur l'image correspondante."
     }
 }

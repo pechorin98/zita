@@ -169,5 +169,9 @@
     },
     "buttons": {
       "learn_more": "Mehr erfahren"
+    },
+    "certifications": {
+      "title": "Zertifizierungen",
+      "instruction": "Um die Zertifizierungsdatei anzuzeigen, klicken Sie bitte auf das entsprechende Bild."
     }      
 }

@@ -171,5 +171,9 @@
     },
     "buttons": {
       "learn_more": "Daha fazla öğren"
+    },
+    "certifications": {
+      "title": "Sertifikalar",
+      "instruction": "Sertifika dosyasını görüntülemek için lütfen ilgili resme tıklayın."
     }
 }
