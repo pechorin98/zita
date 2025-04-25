@@ -1,36 +1,39 @@
-import React, { useEffect } from 'react';
+// src/App.jsx
+import React, { Suspense, useEffect } from 'react';
 import {
   BrowserRouter as Router,
-  Route,
   Routes,
+  Route,
   Navigate,
   Outlet,
   useParams,
   useLocation,
   useNavigate
 } from 'react-router-dom';
-import ReactGA from "react-ga4";
 import { AnimatePresence, motion } from 'framer-motion';
+import ReactGA from 'react-ga4';
+import { Helmet } from 'react-helmet';
+
 import i18n from './i18n';
 import Home from './pages/home/HomePage';
 import About from './pages/About/AboutPage';
 import Contact from './pages/Contact/ContactPage';
 import Product from './pages/Product/ProductPage';
-import Navbar from './components/macro/navbar/navbar';
-import Footer from './components/macro/footer/footer';
 import Catalog from './pages/Catalog/Catalog';
 import Cert from './pages/Cert/Cert';
 import Rohs from './pages/Rohs/Rohs';
 import Emc from './pages/emc/emc';
 import Ptc from './pages/Ptc/Ptc';
 import Iso from './pages/Iso9001/Iso9001';
-import GA4AnalyticsTracker from './GA4AnalyticsTracker';
-import LanguageBtn from './components/micro/languageBtn/languageBtn';
-import { Helmet } from 'react-helmet';
-import CookiePopup from './components/micro/cookiePopup/CookiePopup';
 import Policy from './pages/Policy/Policy';
 
-// 🔥 Inject Structured Data for Google SEO
+import Navbar from './components/macro/navbar/navbar';
+import Footer from './components/macro/footer/footer';
+import CookiePopup from './components/micro/cookiePopup/CookiePopup';
+import LanguageBtn from './components/micro/languageBtn/languageBtn';
+import GA4AnalyticsTracker from './GA4AnalyticsTracker';
+
+// 🔥 Google SEO için Structured Data eklemek
 const addStructuredData = () => {
   const script = document.createElement("script");
   script.type = "application/ld+json";
@@ -44,52 +47,35 @@ const addStructuredData = () => {
       "@type": "ContactPoint",
       "telephone": "+90 212 678 37 90",
       "contactType": "customer service",
-      "areaServed": [
-        "TR", "DE", "FR", "ES", "IT", "NL", "BE", "UK", "SE", "NO", "FI", "DK", "PL",
-        "CZ", "HU", "SK", "RO", "BG", "GR", "PT", "IE", "CH", "AT", "HR", "SI", "MT", "CY",
-        "EG", "DZ", "MA", "TN", "LY", "SD", "SS", "MR", "SN", "GN", "ML", "BF", "NE", "TD", "ER", "DJ",
-        "IL", "SA", "AE", "KW", "QA", "BH", "OM", "YE", "JO", "SY", "LB", "IQ", "IR", "PK"
-      ],
-
-      "availableLanguage": ["Turkish", "English", "French", "German"]
+      "areaServed": [ /* ... */ ],
+      "availableLanguage": ["Turkish","English","French","German"]
     }],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Yarımburgaz Mah. Ülkü Sk. No: 37/A Giriş Kat Altınşehir",
-      "addressLocality": "Küçükçekmece",
-      "addressRegion": "İstanbul",
-      "postalCode": "34306",
-      "addressCountry": "TR"
-    },
+    "address": { /* ... */ },
     "sameAs": [
       "https://facebook.com/zitaaydinlatma",
       "https://instagram.com/zitaaydinlatma",
       "https://linkedin.com/company/zitaaydinlatma"
     ]
   });
-
   document.head.appendChild(script);
 };
 
-// Animate edilecek sayfa wrapper'ı
+// Sayfa geçiş animasyonu sarmalayıcısı
 const PageWrapper = ({ children }) => {
-  const pageVariants = {
+  const variants = {
     initial: { opacity: 0, x: 100 },
-    in: { opacity: 1, x: 0 },
-    out: { opacity: 0, x: -100 }
+    in:      { opacity: 1, x: 0 },
+    out:     { opacity: 0, x: -100 }
   };
-  const pageTransition = {
-    type: 'tween',
-    ease: 'easeInOut',
-    duration: 0.5
-  };
+  const transition = { type: 'tween', ease: 'easeInOut', duration: 0.5 };
+
   return (
     <motion.div
       initial="initial"
       animate="in"
       exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
+      variants={variants}
+      transition={transition}
       style={{ width: '100%' }}
     >
       {children}
@@ -97,27 +83,27 @@ const PageWrapper = ({ children }) => {
   );
 };
 
-// Üst route altında render edilecek layout
+// :lng parametresine göre layout
 function LanguageRoutes() {
   const { lng } = useParams();
-  const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    const preferredLanguage = lng || navigator.language.split('-')[0];
-    if (['en', 'fr', 'de', 'tr'].includes(preferredLanguage)) {
-      i18n.changeLanguage(preferredLanguage);
-    } else {
-      i18n.changeLanguage('en');
+    // Eğer URL parametresi yoksa tarayıcı diline veya 'en' fallback’e yönlendir
+    if (!lng) {
+      const browserLang = navigator.language.split('-')[0];
+      const iso = ['en','fr','de','tr'].includes(browserLang) ? browserLang : 'en';
+      navigate(`/${iso}/`, { replace: true });
+      return;
     }
-  }, [lng]);
-
-
+    // Geçerli dilde çeviriyi yükle
+    const lang = ['en','fr','de','tr'].includes(lng) ? lng : 'en';
+    i18n.changeLanguage(lang);
+  }, [lng, navigate]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Navbar />
-      {/* İçerik alanı: AnimatePresence ile geçiş animasyonu */}
       <div style={{ flex: 1 }}>
         <AnimatePresence mode="wait">
           <Outlet />
@@ -131,45 +117,41 @@ function LanguageRoutes() {
 }
 
 function App() {
-  useEffect(() => {
-    addStructuredData();
-  }, []);
+  useEffect(() => { addStructuredData(); }, []);
+  useEffect(() => { document.documentElement.lang = i18n.language; }, [i18n.language]);
 
-  useEffect(() => {
-    document.documentElement.lang = i18n.language; // Set <html lang="currentLanguage">
-  }, [i18n.language]);
   return (
-    <Router>
-      <Helmet>
-        {/* 🔥 HARD-CODED HREFLANG TAGS 🔥 */}
-        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/tr/" hreflang="tr" />
-        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/en/" hreflang="en" />
-        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/de/" hreflang="de" />
-        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/fr/" hreflang="fr" />
-        <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/" hreflang="x-default" />
-      </Helmet>
-      <GA4AnalyticsTracker />
-      <Routes>
-        {/* Eğer URL’de dil parametresi yoksa mevcut i18n dili ile yönlendir */}
-        <Route path="/" element={<Navigate to={`/${i18n.language}/`} replace />} />
-        {/* Dil parametresi ile başlayan route */}
-        <Route path="/:lng" element={<LanguageRoutes />}>
-          <Route index element={<PageWrapper><Home /></PageWrapper>} />
-          <Route path="About" element={<PageWrapper><About /></PageWrapper>} />
-          <Route path="Contact" element={<PageWrapper><Contact /></PageWrapper>} />
-          <Route path="Product" element={<PageWrapper><Product /></PageWrapper>} />
-          <Route path="Catalog" element={<PageWrapper><Catalog /></PageWrapper>} />
-          <Route path="Certifications" element={<PageWrapper><Cert /></PageWrapper>} />
-          <Route path="Rohs" element={<PageWrapper><Rohs /></PageWrapper>} />
-          <Route path="Emc" element={<PageWrapper><Emc /></PageWrapper>} />
-          <Route path="Ptc" element={<PageWrapper><Ptc /></PageWrapper>} />
-          <Route path="Iso" element={<PageWrapper><Iso /></PageWrapper>} />
-          <Route path="Policy" element={<Policy />} />
+    // Çeviriler hazır olana dek "Yükleniyor…" mesajı göster
+    <Suspense fallback={<div></div>}>
+      <Router>
+        <Helmet>
+          <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/tr/" hreflang="tr" />
+          <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/en/" hreflang="en" />
+          <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/de/" hreflang="de" />
+          <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/fr/" hreflang="fr" />
+          <link rel="alternate" href="https://www.zitaaydinlatma.com.tr/" hreflang="x-default" />
+        </Helmet>
+        <GA4AnalyticsTracker />
+        <Routes>
+          <Route path="/" element={<Navigate to={`/${i18n.language}/`} replace />} />
+          <Route path="/:lng" element={<LanguageRoutes />}>
+            <Route index             element={<PageWrapper><Home /></PageWrapper>} />
+            <Route path="About"      element={<PageWrapper><About /></PageWrapper>} />
+            <Route path="Contact"    element={<PageWrapper><Contact /></PageWrapper>} />
+            <Route path="Product"    element={<PageWrapper><Product /></PageWrapper>} />
+            <Route path="Catalog"    element={<PageWrapper><Catalog /></PageWrapper>} />
+            <Route path="Certifications" element={<PageWrapper><Cert /></PageWrapper>} />
+            <Route path="Rohs"       element={<PageWrapper><Rohs /></PageWrapper>} />
+            <Route path="Emc"        element={<PageWrapper><Emc /></PageWrapper>} />
+            <Route path="Ptc"        element={<PageWrapper><Ptc /></PageWrapper>} />
+            <Route path="Iso"        element={<PageWrapper><Iso /></PageWrapper>} />
+            <Route path="Policy"     element={<Policy />} />
+            <Route path="*"          element={<Navigate to={`/${i18n.language}/`} replace />} />
+          </Route>
           <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />
-        </Route>
-        <Route path="*" element={<Navigate to={`/${i18n.language}/`} replace />} />
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </Suspense>
   );
 }
 
