@@ -173,5 +173,13 @@
     "certifications": {
       "title": "Zertifizierungen",
       "instruction": "Um die Zertifizierungsdatei anzuzeigen, klicken Sie bitte auf das entsprechende Bild."
-    }      
+    },
+    "purchase_modal": {
+  "title": "Möchten Sie etwas kaufen?",
+  "description": "Wenn Sie unser Produkt kaufen möchten, kontaktieren Sie uns bitte! Unser Team hilft Ihnen gerne bei allen Fragen weiter.",
+  "text_button": "Schreiben Sie uns",
+  "call_button": "Rufen Sie uns an",
+  "maybe_later": "Vielleicht später"
+}
+      
 }

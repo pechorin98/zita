@@ -173,5 +173,13 @@
     "certifications": {
       "title": "Certifications",
       "instruction": "Pour voir le fichier de certification, veuillez cliquer sur l'image correspondante."
-    }
+    },
+    "purchase_modal": {
+  "title": "Vous souhaitez acheter ?",
+  "description": "Si vous souhaitez acheter notre produit, veuillez nous contacter ! Notre équipe est prête à répondre à toutes vos questions.",
+  "text_button": "Envoyez-nous",
+  "call_button": "Appelez-nous",
+  "maybe_later": "Peut-être plus tard"
+}
+
 }

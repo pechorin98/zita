@@ -9,6 +9,7 @@ import Type4Comp from '../../components/mid/type4Comp/Type4Comp';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import PrimaryButton from '../../components/micro/primaryDesktopButton/PrimaryButton';
+import  ContactPopup from '../../components/macro/PurchaseModal/PurchaseModal';
 
 function Product() {
 
@@ -17,6 +18,14 @@ function Product() {
     const navigate = useNavigate();
 
     const [windowsWith, setWindowsWith] = useState(null);
+
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsPopupOpen(true)
+        },1000)
+    },[])
 
     useEffect(() => {
         const updateVideoSrc = () => {
@@ -38,6 +47,7 @@ function Product() {
                 <link rel="canonical" href="https://www.zitaaydinlatma.com.tr/products" />
                 <meta name="robots" content="index, follow" />
             </Helmet>
+            <ContactPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
             {/*katalog Componentı*/}
             <section>
                 <Type2CompImgAnimation title={t('products.catalogue.title')}
@@ -70,11 +80,11 @@ function Product() {
                     <h1 className='titleText'>{t('products.certifications.title')}</h1>
                     <p className='paraText'>{t('products.certifications.description')}</p>
                     <div className={styles.imgContainer}>
-                        <img src="/pages/products/cekucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"   loading='lazy' />
+                        <img src="/pages/products/cekucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları" loading='lazy' />
                         <img src="/pages/products/rohskucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları" loading='lazy' />
-                        <img src="/pages/products/isokucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları"  loading='lazy' />
+                        <img src="/pages/products/isokucuk.webp" alt="Zita Aydınlatma Güvenlik ve Kalite Sertifikaları" loading='lazy' />
                     </div>
-                    <PrimaryButton text={t('home.certifications.button')} navRoute={`/${lng}/Certifications`}/>
+                    <PrimaryButton text={t('home.certifications.button')} navRoute={`/${lng}/Certifications`} />
                 </div>
             </section>
         </section>

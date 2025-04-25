@@ -175,5 +175,13 @@
     "certifications": {
       "title": "Sertifikalar",
       "instruction": "Sertifika dosyasını görüntülemek için lütfen ilgili resme tıklayın."
-    }
+    },
+    "purchase_modal": {
+  "title": "Satın Almak mı İstiyorsunuz?",
+  "description": "Ürünümüzü satın almak isterseniz, lütfen bizimle iletişime geçin! Ekibimiz size her konuda yardımcı olmaya hazır.",
+  "text_button": "Mesaj Atın",
+  "call_button": "Bizi Arayın",
+  "maybe_later": "Belki Daha Sonra"
+}
+
 }

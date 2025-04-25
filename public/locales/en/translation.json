@@ -175,7 +175,14 @@
     "certifications": {
       "title": "Certifications",
       "instruction": "To view the certification file, please click on the corresponding image."
-    }
+    },
+    "purchase_modal": {
+  "title": "Looking to Purchase?",
+  "description": "If you'd like to buy our product, please get in touch with us! Our team is ready to assist you with any questions.",
+  "text_button": "Text Us",
+  "call_button": "Call Us",
+  "maybe_later": "Maybe Later"
+}
       
           
 }
