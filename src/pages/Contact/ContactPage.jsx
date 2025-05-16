@@ -88,15 +88,13 @@ function Contact() {
                     </div>
                     <div className={styles.contactBox}>
                         <Phone className="h-6 w-6 flex-shrink-0" />
-                        <span className="text-sm">(0212) 678 37 90</span>
+                        <a href="tel:+902126783790" className="text-sm">
+                            (0212) 678 37 90
+                        </a>
                     </div>
                     <div className={styles.contactBox}>
                         <Mail className="h-6 w-6 mt-1 flex-shrink-0" />
-                        <span className="text-sm">zitaaydinlatma@hotmail.com</span>
-                    </div>
-                    <div className={styles.contactBox}>
-                        <Mail className="h-6 w-6 mt-1 flex-shrink-0" />
-                        <span className="text-sm">info@zitaaydinlatma.com.tr</span>
+                        <a target="_blank" href="mailto:zitaaydinlatma@hotmail.com" className="text-sm">zitaaydinlatma@hotmail.com</a>
                     </div>
                 </div>
                 <div className={styles.wpContainer}>
@@ -108,7 +106,7 @@ function Contact() {
                         <a href="https://wa.me/905337425329" target="_blank" className={styles.whatsappButton}>
                             <img src="/envImg/wpIcon.png" alt="Zita Aydınlatma Whatsapp İletişim Butonu" />
                         </a>
-                        <p style={{"marginTop":"20px"}}className="paraText">+905337425329</p>
+                        <p style={{ "marginTop": "20px" }} className="paraText">+905337425329</p>
                     </div>
                 </div>
                 <div className={styles.imgContainer}>
